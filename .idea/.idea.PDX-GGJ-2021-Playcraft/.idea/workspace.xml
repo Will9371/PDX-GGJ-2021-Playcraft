@@ -11,13 +11,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Physics/ZeroGravityMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/StoredFloatToPercent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/RespondToComponentTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/FilterColliderById.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Transform/FreeMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Rotation/TwoAxisRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Physics/ZeroGravityMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Raycast/ScreenRaycast.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/UI/DynamicBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Debug/PrintToConsole.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToEventID.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Unity Extension/CustomTags.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToSO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/FilterColliderById.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/RespondToComponentTagExit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/RespondToComponentTag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/StoredFloatToPercent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/ZeroGravityMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -59,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611814617768</updated>
-      <workItem from="1611814622567" duration="2356000" />
+      <workItem from="1611814622567" duration="6826000" />
     </task>
     <servers />
   </component>

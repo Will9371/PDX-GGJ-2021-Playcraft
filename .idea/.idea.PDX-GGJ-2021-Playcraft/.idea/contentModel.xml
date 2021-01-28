@@ -8,6 +8,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Playcraft" t="Include">
+          <e p="_NEW" t="Include">
+            <e p="FilterColliderById.cs" t="Include" />
+            <e p="LerpColor.cs" t="Include" />
+            <e p="RespondToComponentTag.cs" t="Include" />
+            <e p="RespondToComponentTagExit.cs" t="Include" />
+            <e p="StoredFloatToPercent.cs" t="Include" />
+            <e p="ZeroGravityMovement.cs" t="Include" />
+          </e>
           <e p="Additive Scenes" t="Include">
             <e p="AccessAdditiveSceneController.cs" t="Include" />
             <e p="AdditiveSceneController.cs" t="Include" />
@@ -182,7 +190,6 @@
               <e p="RBInterface.cs" t="Include" />
               <e p="RBMove.cs" t="Include" />
               <e p="RBsInTriggerList.cs" t="Include" />
-              <e p="ZeroGravityMovement.cs" t="Include" />
             </e>
             <e p="Scriptable Object" t="Include">
               <e p="AudioClipArray.cs" t="Include" />
@@ -204,8 +211,8 @@
               <e p="EventResponder.cs" t="Include" />
               <e p="LocalStateHub.cs" t="Include" />
               <e p="LocalStateListener.cs" t="Include" />
-              <e p="RespondToEventID.cs" t="Include" />
               <e p="RespondToEventIDWithGameObject.cs" t="Include" />
+              <e p="RespondToSO.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
             </e>
             <e p="Statics" t="Include">

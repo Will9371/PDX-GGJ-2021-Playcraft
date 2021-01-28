@@ -10,21 +10,9 @@ namespace Playcraft
         [SerializeField] RectTransform rect;
         [SerializeField] Vector2 maxSize;
         [SerializeField] FillType fillType;
-        [SerializeField] [Range(0, 1)] float fill;
         #pragma warning restore 0649
         
-        void OnValidate()
-        {
-            Refresh();
-        }
-        
-        public void SetFill(float value) 
-        { 
-            fill = value; 
-            Refresh();
-        }
-        
-        void Refresh()
+        public void SetFill(float fill)
         {
             var x = maxSize.x;
             var y = maxSize.y;

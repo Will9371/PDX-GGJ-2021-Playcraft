@@ -14,6 +14,7 @@ namespace Playcraft
         public void Print(SO value) { Print(value.name); }
         public void Print(RaycastHit value) { Print(value.point); }
         public void Print(Collider value) { Print(value.name); }
+        public void Print(Color value) { Print(value.ToString("F3")); }
         //public void Print(MessageLink value) { Print(value.name); }
     }
 }

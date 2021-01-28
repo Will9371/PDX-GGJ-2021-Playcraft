@@ -4,7 +4,7 @@ namespace Playcraft
 {
     public class CustomTags : MonoBehaviour
     {
-        [SerializeField] SO[] tags;
+        public SO[] tags;
         
         public bool HasTag(SO value)
         {

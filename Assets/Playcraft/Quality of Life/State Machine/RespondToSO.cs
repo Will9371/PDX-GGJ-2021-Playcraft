@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 
+// MODIFIED
 namespace Playcraft
 {
-    public class RespondToEventID : MonoBehaviour
+    public class RespondToSO : MonoBehaviour
     {
         #pragma warning disable 0649
         [SerializeField] EventResponder responder;

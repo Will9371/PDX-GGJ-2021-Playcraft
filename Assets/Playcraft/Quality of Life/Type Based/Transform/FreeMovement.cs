@@ -9,7 +9,7 @@ namespace Playcraft
         [SerializeField] float maxSpeed = 20f;
         float speed;
         
-        private void Start()
+        void Start()
         {
             speed = startSpeed;
         }

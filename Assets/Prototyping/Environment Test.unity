@@ -5043,6 +5043,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 338731470, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OutputHigh.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338731470, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OutputHigh.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338731470, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OutputHigh.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342089866, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342089868, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627781451740794336, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_RootOrder
@@ -5102,6 +5122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base Drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812235933843842317, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}

@@ -187,7 +187,7 @@ PrefabInstance:
         type: 3}
       propertyPath: tags.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: e8eebf33445c095468c6d4d2d23c416e,
+      objectReference: {fileID: 11400000, guid: 3362dbe4eaf150d4db569ed2d60cc5b6,
         type: 2}
     - target: {fileID: 2541391869417129134, guid: 5c88e24fef9172d41857245fc3073f81,
         type: 3}
@@ -573,38 +573,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 35.997, y: -162.88701, z: -154.05}
---- !u!1 &1895543879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2916768397173830133, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-    type: 3}
-  m_PrefabInstance: {fileID: 1104767325666874291}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1895543886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895543879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b4dd743f06b6345ba038e4c0e03c5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OutputFloat:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 960332365}
-        m_MethodName: AddOverTime
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2071717742
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,13 +742,13 @@ PrefabInstance:
         type: 3}
       propertyPath: bindings.Array.data[0].tag
       value: 
-      objectReference: {fileID: 11400000, guid: b5e7e855055708e4c9a129eac2e8dc77,
+      objectReference: {fileID: 11400000, guid: 9a082c090ee518444a978d8ae528795c,
         type: 2}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[1].tag
       value: 
-      objectReference: {fileID: 11400000, guid: b5e7e855055708e4c9a129eac2e8dc77,
+      objectReference: {fileID: 11400000, guid: 3362dbe4eaf150d4db569ed2d60cc5b6,
         type: 2}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -795,18 +763,23 @@ PrefabInstance:
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: bindings.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1895543886}
+      objectReference: {fileID: 960332365}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1895543886}
+      objectReference: {fileID: 960332365}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -820,22 +793,22 @@ PrefabInstance:
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Input
+      value: AddOverTime
       objectReference: {fileID: 0}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Input
+      value: AddOverTime
       objectReference: {fileID: 0}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: bindings.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 1.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4146165025570329656, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -851,6 +824,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: collisionEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: triggerEvents.Array.data[0].Output.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: triggerEvents.Array.data[0].Output.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: triggerEvents.Array.data[0].Output.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: triggerEvents.Array.data[0].Output.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216320677965753401, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: triggerEvents.Array.data[0].Output.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
@@ -918,9 +921,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2541391869417129131, guid: 5c88e24fef9172d41857245fc3073f81,
         type: 3}
+      propertyPath: tags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541391869417129131, guid: 5c88e24fef9172d41857245fc3073f81,
+        type: 3}
       propertyPath: tags.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b5e7e855055708e4c9a129eac2e8dc77,
+      objectReference: {fileID: 11400000, guid: 9a082c090ee518444a978d8ae528795c,
+        type: 2}
+    - target: {fileID: 2541391869417129131, guid: 5c88e24fef9172d41857245fc3073f81,
+        type: 3}
+      propertyPath: tags.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a082c090ee518444a978d8ae528795c,
         type: 2}
     - target: {fileID: 2541391869417129134, guid: 5c88e24fef9172d41857245fc3073f81,
         type: 3}

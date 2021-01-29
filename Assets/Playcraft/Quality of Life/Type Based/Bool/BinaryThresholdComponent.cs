@@ -6,7 +6,7 @@ namespace Playcraft
     public class BinaryThresholdComponent : MonoBehaviour
     {
         #pragma warning disable 0649
-        [SerializeField] Vector2 thresholds;
+        public Vector2 thresholds;
         [SerializeField] UnityEvent OutputHigh;
         [SerializeField] UnityEvent OutputLow;
         [SerializeField] bool startHigh;

@@ -107,4 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - {fileID: 11400000, guid: 0fd92fc2b634dea49b5e6d0f3a2e45bf, type: 2}
+  - {fileID: 11400000, guid: 9a082c090ee518444a978d8ae528795c, type: 2}
+  - {fileID: 11400000, guid: 7779a11feb88a634e9c6e7e23f353604, type: 2}

@@ -2,7 +2,7 @@
 
 public class StoredFloatToPercent : MonoBehaviour
 {
-    [SerializeField] Vector2 range;
+    public Vector2 range;
     [SerializeField] FloatEvent Percent;
     [SerializeField] bool startAtMaximum;
     

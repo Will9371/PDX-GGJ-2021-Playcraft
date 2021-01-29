@@ -4,7 +4,7 @@ namespace Playcraft
 {
     public class GetMouseMovement : MonoBehaviour
     {
-        [SerializeField] Vector2 sensitivity = new Vector2(1f, 1f);
+        public Vector2 sensitivity = new Vector2(1f, 1f);
         [SerializeField] Vector2Event Output = default;
         
         float x;

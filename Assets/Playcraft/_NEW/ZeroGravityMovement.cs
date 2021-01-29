@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class ZeroGravityMovement : MonoBehaviour
 {
-    [SerializeField] float acceleration = 10f;
+    public float thrust = 10f;
     [SerializeField] Rigidbody rb;
     [SerializeField] UnityEvent OnAccelerate;
     
@@ -21,7 +21,18 @@ public class ZeroGravityMovement : MonoBehaviour
     {
         if (disabled) return;
         var localDirection = rb.transform.TransformDirection(direction);
-        rb.AddForce(acceleration * localDirection, ForceMode.Force);
+        rb.AddForce(thrust * localDirection, ForceMode.Force);
         OnAccelerate.Invoke();
+    }
+    
+    public void Drag(float rate)
+    {
+        var vector = -rb.velocity;
+        
+        // Decrease drag when slow to ease into a stop
+        if (vector.magnitude > 1) 
+            vector = vector.normalized; 
+            
+        rb.AddForce(vector * rate, ForceMode.Force);
     }
 }

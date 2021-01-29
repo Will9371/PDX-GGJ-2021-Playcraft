@@ -12,7 +12,7 @@ namespace Playcraft
         #pragma warning disable 0649
         [SerializeField] DialogNode node;
         [SerializeField] ResponseOption[] responses;
-        [SerializeField] TagEvent RelayEvent;
+        [SerializeField] SOEvent RelayEvent;
         [SerializeField] DialogNodeEvent RelayNode;
         #pragma warning restore 0649
         

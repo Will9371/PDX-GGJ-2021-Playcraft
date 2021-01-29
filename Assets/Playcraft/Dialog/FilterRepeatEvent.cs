@@ -6,7 +6,7 @@ namespace Playcraft
     public class FilterRepeatEvent : MonoBehaviour
     {
         List<SO> list = new List<SO>();
-        [SerializeField] TagEvent OnAdd = default;
+        [SerializeField] SOEvent OnAdd = default;
         
         public void Input(SO value)
         {

@@ -9,10 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Playcraft" t="Include">
           <e p="_NEW" t="Include">
-            <e p="FilterColliderById.cs" t="Include" />
+            <e p="DowncastSO.cs" t="Include" />
+            <e p="FloatSO.cs" t="Include" />
             <e p="LerpColor.cs" t="Include" />
             <e p="RespondToComponentTag.cs" t="Include" />
-            <e p="RespondToComponentTagExit.cs" t="Include" />
             <e p="StoredFloatToPercent.cs" t="Include" />
             <e p="ZeroGravityMovement.cs" t="Include" />
           </e>

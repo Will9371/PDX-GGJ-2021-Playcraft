@@ -20,7 +20,7 @@ using Playcraft;
 [Serializable] public class RaycastHitEvent : UnityEvent<RaycastHit> { }
 [Serializable] public class TransformListEvent : UnityEvent<List<Transform>> { }
 [Serializable] public class GameObjectBoolEvent : UnityEvent<GameObject, bool> { }
-[Serializable] public class TagEvent : UnityEvent<SO> { }
+[Serializable] public class SOEvent : UnityEvent<SO> { }
 [Serializable] public class GameObjectTagEvent : UnityEvent<SO, GameObject> { }
 [Serializable] public class GameObjectVector3Event : UnityEvent<GameObject, Vector3> { }
 [Serializable] public class ColorEvent : UnityEvent<Color> { }

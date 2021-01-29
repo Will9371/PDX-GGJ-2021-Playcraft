@@ -6,7 +6,7 @@ namespace Playcraft
     {
         #pragma warning disable 0649
         [SerializeField] float time;
-        [SerializeField] TagEvent OnEnd;
+        [SerializeField] SOEvent OnEnd;
         #pragma warning restore 0649
         
         SO id;

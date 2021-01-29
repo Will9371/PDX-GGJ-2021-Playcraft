@@ -7,6 +7,13 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="_Common" t="Include">
+          <e p="Narrative" t="Include">
+            <e p="DisplayNarrative.cs" t="Include" />
+            <e p="NarrativeManager.cs" t="Include" />
+            <e p="NarrativeSegment.cs" t="Include" />
+          </e>
+        </e>
         <e p="Playcraft" t="Include">
           <e p="_NEW" t="Include">
             <e p="DowncastSO.cs" t="Include" />

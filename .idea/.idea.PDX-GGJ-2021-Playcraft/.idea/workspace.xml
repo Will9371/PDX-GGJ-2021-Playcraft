@@ -14,8 +14,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/StoredFloatToPercent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/DowncastSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/RespondToComponentTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -40,6 +43,9 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/RespondToComponentTag.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Dialog/FilterRepeatEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/DowncastSO.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -82,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611814617768</updated>
       <workItem from="1611814622567" duration="7420000" />
-      <workItem from="1611887241560" duration="2485000" />
+      <workItem from="1611887241560" duration="5919000" />
     </task>
     <servers />
   </component>

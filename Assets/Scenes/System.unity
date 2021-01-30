@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -470,7 +470,7 @@ MonoBehaviour:
     droneUI: {fileID: 1357759095}
   - drone: {fileID: 0}
     droneUI: {fileID: 1809590486}
-  startingIndex: 0
+  startingIndex: 1
 --- !u!114 &815457611
 MonoBehaviour:
   m_ObjectHideFlags: 0

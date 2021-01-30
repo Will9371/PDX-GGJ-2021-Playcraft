@@ -2085,6 +2085,8 @@ MonoBehaviour:
   battery: {fileID: 3568361738965447796}
   interactionInput: {fileID: 8352003009847186178}
   beaconLauncher: {fileID: 0}
+  follow: {fileID: 6246717271875747312}
+  state: {fileID: 0}
 --- !u!114 &2133419787339867849
 MonoBehaviour:
   m_ObjectHideFlags: 0

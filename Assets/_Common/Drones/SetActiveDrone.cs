@@ -7,6 +7,9 @@ public class SetActiveDrone : MonoBehaviour
     public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     
+    DroneState currentDroneState => droneData[index].drone.state;
+    bool canChange => currentDroneState.docked || currentDroneState.dead;
+    
     void Start()
     {
         index = startingIndex;
@@ -24,6 +27,9 @@ public class SetActiveDrone : MonoBehaviour
     bool inSelectionMode;
     public void SetSelectionMode(bool value)
     {
+        if (value && !canChange)
+            return;
+    
         inSelectionMode = value;
         selectionPanel.SetActive(value);
         

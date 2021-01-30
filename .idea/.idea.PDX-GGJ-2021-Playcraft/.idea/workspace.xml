@@ -57,13 +57,13 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Rotation/TwoAxisRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DrainChargeBattery.cs" />
-      <option value="$PROJECT_DIR$/Assets/Playcraft/Interaction/ToggleInteraction.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetActiveDrone.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DockDrone.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/ZeroGravityMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/FollowDrone.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneState.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetActiveDrone.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Interaction/ToggleInteraction.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -108,6 +108,7 @@
       <workItem from="1611814622567" duration="7420000" />
       <workItem from="1611887241560" duration="7066000" />
       <workItem from="1611958587241" duration="23938000" />
+      <workItem from="1612040835591" duration="1969000" />
     </task>
     <servers />
   </component>

@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: interactionDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: deactivationAction
+      value: 
+      objectReference: {fileID: 3430868885951609274}
     - target: {fileID: 2604359783970747881, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_IsActive

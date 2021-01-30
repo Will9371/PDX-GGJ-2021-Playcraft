@@ -1738,8 +1738,8 @@ MonoBehaviour:
   selectionPanel: {fileID: 1541701681}
   drones:
   - {fileID: 2072682961}
-  - {fileID: 2007521303}
-  startingIndex: 1
+  - {fileID: 1980591883}
+  startingIndex: 0
 --- !u!1001 &906355621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3416,7 +3416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe9012954016e18478308a54eddae2a0, type: 3}
---- !u!114 &2007521303 stripped
+--- !u!114 &1980591883 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 629541439774639167, guid: beb0084364a99cf4191694e1b13d5b1e,
     type: 3}
@@ -3654,6 +3654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -799423167370560109, guid: beb0084364a99cf4191694e1b13d5b1e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4243776889345255437, guid: beb0084364a99cf4191694e1b13d5b1e,
         type: 3}
       propertyPath: m_Name

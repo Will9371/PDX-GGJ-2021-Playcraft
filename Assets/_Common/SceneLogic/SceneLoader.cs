@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public string StartingSceneForBuilds;
-    public GameObject BaseDronePrefab;
-    public GameObject RescueDronePrefab;
+    public List<GameObject> DronePrefabs;
     public SetActiveDrone DroneActivator;
 
     List<GameObject> Drones = new List<GameObject>();
@@ -43,8 +42,7 @@ public class SceneLoader : MonoBehaviour
             }
         }
 
-        var prefabsToInstantiate = new[] { BaseDronePrefab, RescueDronePrefab };
-        for (var i = 0; i < prefabsToInstantiate.Length; i++)
+        for (var i = 0; i < DronePrefabs.Count; i++)
         {
             var startingPosition = Vector3.zero;
             var startingRotation = Quaternion.identity;
@@ -53,7 +51,7 @@ public class SceneLoader : MonoBehaviour
                 startingPosition = setupInfo.StartingPositions[i].position;
                 startingRotation = setupInfo.StartingPositions[i].rotation;
             }
-            var newDrone = Instantiate(prefabsToInstantiate[i]);
+            var newDrone = Instantiate(DronePrefabs[i]);
             newDrone.transform.position = startingPosition;
             newDrone.transform.rotation = startingRotation;
 

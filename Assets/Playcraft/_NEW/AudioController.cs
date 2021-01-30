@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
+    [Range(0f, 1f)]
+    public float volumePreset = 1f;
+
     AudioSource source;
     float volumeTarget = 1f;
 
@@ -26,6 +29,24 @@ public class AudioController : MonoBehaviour
         volumeTarget = 1f;
         source.volume = 0f;
         source.Play();
+        currentRoutine = StartCoroutine(FadeRoutine(duration));
+    }
+
+    public void FadeInToPreset(float duration)
+    {
+        CancelRunningRoutine();
+
+        volumeTarget = volumePreset;
+        source.volume = 0f;
+        source.Play();
+        currentRoutine = StartCoroutine(FadeRoutine(duration));
+    }
+
+    public void FadeToPreset(float duration)
+    {
+        CancelRunningRoutine();
+
+        volumeTarget = volumePreset;
         currentRoutine = StartCoroutine(FadeRoutine(duration));
     }
 

@@ -279,7 +279,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1741892883784122875}
-          m_MethodName: FadeIn
+          m_MethodName: FadeInToPreset
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -339,7 +339,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 8391957373203798475}
-          m_MethodName: FadeIn
+          m_MethodName: FadeInToPreset
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -598,6 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88dc73177f397d14c85a840cac582b02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumePreset: 0.722
 --- !u!82 &2567275664535009826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -768,7 +769,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6159f5cb00027354f9da52f163bd6196, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.597
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -975,7 +976,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a587a473a3da0b4448171341780a71e5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.476
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1360,7 +1361,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7a6462ff8bb3c0d4098854aa13a950a5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.501
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1605,6 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88dc73177f397d14c85a840cac582b02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumePreset: 0.513
 --- !u!82 &7107480750145886157
 AudioSource:
   m_ObjectHideFlags: 0

@@ -19,12 +19,17 @@ public class ZeroGravityMovement : MonoBehaviour
     }
 
     public void Accelerate(Vector3SO data) { Accelerate(data.value); } 
-    public void Accelerate(Vector3 direction)
+    void Accelerate(Vector3 direction)
     {
         if (disabled) return;
         var localDirection = rb.transform.TransformDirection(direction);
         rb.AddForce(thrust * localDirection, ForceMode.Force);
         OnAccelerate.Invoke();
+    }
+    
+    public void Pull(Vector3 vector)
+    {
+        rb.AddForce(thrust * vector, ForceMode.Force);
     }
     
     // Use internal value

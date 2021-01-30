@@ -9,8 +9,10 @@
       <e p="Assets" t="Include">
         <e p="_Common" t="Include">
           <e p="Drones" t="Include">
+            <e p="DockDrone.cs" t="Include" />
             <e p="DrainChargeBattery.cs" t="Include" />
             <e p="DroneSettings.cs" t="Include" />
+            <e p="DroneState.cs" t="Include" />
             <e p="FollowDrone.cs" t="Include" />
             <e p="SetActiveDrone.cs" t="Include" />
             <e p="SetDroneActive.cs" t="Include" />
@@ -23,6 +25,7 @@
         </e>
         <e p="Playcraft" t="Include">
           <e p="_NEW" t="Include">
+            <e p="AudioController.cs" t="Include" />
             <e p="DisplayPercentText.cs" t="Include" />
             <e p="DowncastSO.cs" t="Include" />
             <e p="FloatSO.cs" t="Include" />

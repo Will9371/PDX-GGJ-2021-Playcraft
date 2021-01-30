@@ -628,6 +628,7 @@ GameObject:
   - component: {fileID: 1017767214965818723}
   - component: {fileID: 7216320677965753401}
   - component: {fileID: 4146165025570329656}
+  - component: {fileID: 8589666258083817253}
   m_Layer: 0
   m_Name: Recharge & Drag Area
   m_TagString: Untagged
@@ -751,6 +752,35 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8589666258083817253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916768397173830133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733ee7217fb8efd4faea66ff5878c76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dockingTags:
+  - {fileID: 11400000, guid: 9a082c090ee518444a978d8ae528795c, type: 2}
+  - {fileID: 11400000, guid: 3362dbe4eaf150d4db569ed2d60cc5b6, type: 2}
+  OnDock:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2133419787339867849}
+        m_MethodName: SetDocked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3627781451740794339
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +794,7 @@ GameObject:
   - component: {fileID: 4399053689325084242}
   - component: {fileID: 2072682960}
   - component: {fileID: 2072682961}
+  - component: {fileID: 2133419787339867849}
   m_Layer: 0
   m_Name: Base Drone
   m_TagString: MainCamera
@@ -840,7 +871,7 @@ MonoBehaviour:
   drag: 0
   interactionDistance: 2.5
   maxBatteryCharge: 40
-  shutoffEngineWhenBelow: 0
+  shutoffEngineWhenBelow: 0.01
   reactivateEngineWhenAbove: 0.25
   pointLightIntensity: 2
   spotLightIntensity: 2
@@ -874,7 +905,22 @@ MonoBehaviour:
   lights: {fileID: 1177100698}
   battery: {fileID: 3568361738965447796}
   interactionInput: {fileID: 8352003009847186178}
+--- !u!114 &2133419787339867849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627781451740794339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f31595dd689744aa8fc302fbac6417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   active: 0
+  docked: 0
+  dead: 0
+  movement: {fileID: 1162360422}
 --- !u!1 &4304409931946816607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,12 +1438,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c91e0439b34d94e869cf2990a0d7e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thresholds: {x: 0, y: 0.25}
+  thresholds: {x: 0.01, y: 0.25}
   OutputHigh:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162360422}
-        m_MethodName: SetDisabled
+      - m_Target: {fileID: 2133419787339867849}
+        m_MethodName: SetDead
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1410,8 +1456,8 @@ MonoBehaviour:
   OutputLow:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162360422}
-        m_MethodName: SetDisabled
+      - m_Target: {fileID: 2133419787339867849}
+        m_MethodName: SetDead
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1647,6 +1693,7 @@ MonoBehaviour:
   pullMultiplier: 0.5
   stoppingDistance: 2.5
   maxPullStrength: 5
+  target: {fileID: 0}
 --- !u!114 &7059950326853055032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,12 +1898,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fc3224c29c3eda47a1429f9ebf3c077, type: 3}
---- !u!224 &145696415939336194 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6274982768326122444, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
-    type: 3}
-  m_PrefabInstance: {fileID: 6129585505452032974}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4073385713930849052 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7896845562100959442, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
@@ -1869,3 +1910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bd7906c93b77946bb090fefdf71549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &145696415939336194 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6274982768326122444, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
+    type: 3}
+  m_PrefabInstance: {fileID: 6129585505452032974}
+  m_PrefabAsset: {fileID: 0}

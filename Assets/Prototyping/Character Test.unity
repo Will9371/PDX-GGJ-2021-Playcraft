@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 784141090}
   - component: {fileID: 784141089}
   m_Layer: 5
-  m_Name: Drone Select B
+  m_Name: Select Rescue Drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,9 +1736,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionPanel: {fileID: 1541701681}
-  drones:
-  - {fileID: 2072682961}
-  - {fileID: 1980591883}
+  droneData:
+  - drone: {fileID: 2072682961}
+    droneUI: {fileID: 929407232}
+  - drone: {fileID: 1980591883}
+    droneUI: {fileID: 784141087}
   startingIndex: 0
 --- !u!1001 &906355621
 PrefabInstance:
@@ -1921,7 +1923,7 @@ GameObject:
   - component: {fileID: 929407235}
   - component: {fileID: 929407234}
   m_Layer: 5
-  m_Name: Drone Select A
+  m_Name: Select Explore Drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2581,7 +2583,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Drone A
+  m_Text: Explore
 --- !u!222 &1475748469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2838,7 +2840,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Drone B
+  m_Text: Rescue
 --- !u!222 &1787887544
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3733,6 +3735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 338731470, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: thresholds.x
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1162360422, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: drag
       value: 1
@@ -3740,6 +3746,14 @@ PrefabInstance:
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: drag
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: maxBatteryCharge
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: shutoffEngineWhenBelow
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3627781451740794336, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -3820,6 +3834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519816051569523605, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: range.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}

@@ -11,20 +11,20 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] DrainChargeBattery battery;
     [SerializeField] KeyboardInput interactionInput;
     
-    public bool active;
-    
     Camera cam;
     AudioListener sound;
+    DroneState state;
     
     void Awake()
     {
+        state = gameObject.GetComponent<DroneState>();
         cam = cameraObject.GetComponent<Camera>();
         sound = cameraObject.GetComponent<AudioListener>();
     }
     
     public void SetActive(bool value)
     {
-        active = value;
+        state.active = value;
         cam.enabled = value;
         sound.enabled = value;
         movementInput.enabled = value;

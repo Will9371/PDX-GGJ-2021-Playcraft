@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class SetActiveDrone : MonoBehaviour
 {
     [SerializeField] GameObject selectionPanel;
-    [SerializeField] SetDroneActive[] drones;
+    [SerializeField] DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     
     void Start()
@@ -33,13 +34,19 @@ public class SetActiveDrone : MonoBehaviour
     
     void SetActiveDroneByIndex()
     {
-        for (int i = 0; i < drones.Length; i++)
-            drones[i].SetActive(i == index);
+        for (int i = 0; i < droneData.Length; i++)
+            droneData[i].drone.SetActive(i == index);
     }
     
     void DeactivateAll()
     {
-        for (int i = 0; i < drones.Length; i++)
-            drones[i].SetActive(false);
+        for (int i = 0; i < droneData.Length; i++)
+            droneData[i].drone.SetActive(false);
+    }
+    
+    [Serializable] public struct DroneActivation
+    {
+        public SetDroneActive drone;
+        public GameObject droneUI;
     }
 }

@@ -13,7 +13,7 @@ public class FollowDrone : MonoBehaviour
     Vector3 targetVector;
     float targetDistance;
     
-    Transform target;
+    public Transform target;
     public void SetTarget(GameObject value) { target = value ? value.transform : null; }
     
     void Awake()
@@ -39,7 +39,7 @@ public class FollowDrone : MonoBehaviour
             if (_acceleration.magnitude > maxPullStrength)
                 _acceleration = targetDirection * maxPullStrength;
             
-            movement.Accelerate(_acceleration);
+            movement.Pull(_acceleration);
         }
         else if (rb.velocity.magnitude > .1f)
         {

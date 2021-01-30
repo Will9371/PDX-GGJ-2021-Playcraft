@@ -1,22 +1,23 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using Playcraft;
 
 public class DisplayNarrative : MonoBehaviour
 {
     [SerializeField] NarrativeManager narrative;
-    [SerializeField] Text text;
     [SerializeField] string emptyText;
+    [SerializeField] StringEvent Output;
 
-
-    void OnEnable()
+    public void Process()
     {
         var rawData = narrative.GetFoundText();
-        text.text = "";
+        var result = "";
         
-        foreach (var item in rawData)
+        for (int i = 0; i < rawData.Length; i++)
         {
-            text.text += item == "" ? emptyText : item;
-            text.text += "\n";
-        }        
+            result += rawData[i] == "" ? emptyText : rawData[i];
+            if (i < rawData.Length - 1) result += "\n";
+        }
+        
+        Output.Invoke(result);  
     }
 }

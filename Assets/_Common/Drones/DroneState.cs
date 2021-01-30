@@ -2,12 +2,26 @@
 
 public class DroneState : MonoBehaviour
 {
+    [Tooltip("Currently controlled by the player")]
     public bool active;
+    [Tooltip("In a recharge area")]
     public bool docked;
+    [Tooltip("Outputs docked state when it changes")]
+    public BoolEvent OnSetDocked;
+    [Tooltip("Out of batteries, cannot move")]
     public bool dead;
+    [Tooltip("Outputs dead state when it changes")]
+    public BoolEvent OnSetDead;
+        
+    public void SetDocked(bool value) 
+    { 
+        docked = value; 
+        OnSetDocked.Invoke(value);
+    }
     
-    [SerializeField] ZeroGravityMovement movement;
-    
-    public void SetDocked(bool value) { docked = value; }
-    public void SetDead(bool value) { dead = value; movement.SetDisabled(value); }
+    public void SetDead(bool value) 
+    { 
+        dead = value; 
+        OnSetDead.Invoke(value); 
+    }
 }

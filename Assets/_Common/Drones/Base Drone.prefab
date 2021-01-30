@@ -767,7 +767,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 780000000201000012010000
+  - keys: 730000000201000012010000
     pressType: 2
     OnActive:
       m_PersistentCalls:
@@ -796,7 +796,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 730000000501000012010000
+  - keys: 200000000501000031010000
     pressType: 2
     OnActive:
       m_PersistentCalls:
@@ -866,7 +866,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 780000001201000002010000
+  - keys: 730000001201000002010000
     pressType: 0
     OnActive:
       m_PersistentCalls:
@@ -893,7 +893,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 780000001201000002010000
+  - keys: 730000001201000002010000
     pressType: 1
     OnActive:
       m_PersistentCalls:
@@ -920,7 +920,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 7300000005010000
+  - keys: 200000000501000031010000
     pressType: 0
     OnActive:
       m_PersistentCalls:
@@ -947,7 +947,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 7300000005010000
+  - keys: 200000000501000031010000
     pressType: 1
     OnActive:
       m_PersistentCalls:

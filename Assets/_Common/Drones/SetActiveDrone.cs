@@ -4,13 +4,12 @@ using UnityEngine;
 public class SetActiveDrone : MonoBehaviour
 {
     [SerializeField] GameObject selectionPanel;
-    [SerializeField] DroneActivation[] droneData;
+    public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     
     void Start()
     {
         index = startingIndex;
-        SetActiveDroneByIndex();
     }
     
     int index;
@@ -32,7 +31,7 @@ public class SetActiveDrone : MonoBehaviour
         else SetActiveDroneByIndex();
     }
     
-    void SetActiveDroneByIndex()
+    public void SetActiveDroneByIndex()
     {
         for (int i = 0; i < droneData.Length; i++)
             droneData[i].drone.SetActive(i == index);

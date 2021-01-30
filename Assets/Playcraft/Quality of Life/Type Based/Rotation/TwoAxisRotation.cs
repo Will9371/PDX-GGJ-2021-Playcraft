@@ -27,6 +27,12 @@ namespace Playcraft
         
         void Awake() { if (!self) self = transform; }
 
+        private void Start()
+        {
+            x = self.eulerAngles.x;
+            y = self.eulerAngles.y;
+        }
+
         public void Rotate(Vector2 value)
         {
             if (!active) return;

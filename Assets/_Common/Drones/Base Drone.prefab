@@ -2593,10 +2593,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battery: {fileID: 5519816051569523605}
-  engines: {fileID: 0}
   rb: {fileID: 4399053689325084241}
   thrustDrain: 1
   brakeDrain: 1
+  minVelocityForBrakeDrain: 0.25
 --- !u!114 &5519816051569523605
 MonoBehaviour:
   m_ObjectHideFlags: 0

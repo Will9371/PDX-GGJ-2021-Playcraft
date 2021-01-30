@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2435,10 +2435,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1964676008820196227, guid: 2c33bbdfba4495a4993dea68cb58436c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964676008820196227, guid: 2c33bbdfba4495a4993dea68cb58436c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.97
+      objectReference: {fileID: 0}
     - target: {fileID: 1964676009299759219, guid: 2c33bbdfba4495a4993dea68cb58436c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.67
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 1964676009299759219, guid: 2c33bbdfba4495a4993dea68cb58436c,
         type: 3}
@@ -2448,7 +2458,7 @@ PrefabInstance:
     - target: {fileID: 1964676009299759219, guid: 2c33bbdfba4495a4993dea68cb58436c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.127
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 1964676009299759219, guid: 2c33bbdfba4495a4993dea68cb58436c,
         type: 3}
@@ -2464,6 +2474,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -66.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446052522295759623, guid: 2c33bbdfba4495a4993dea68cb58436c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446052522295759623, guid: 2c33bbdfba4495a4993dea68cb58436c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2446052522295759623, guid: 2c33bbdfba4495a4993dea68cb58436c,
         type: 3}

@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75377ed459f8ce4ca56e608c88779e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingSceneForBuilds: Environment Test
-  BaseDronePrefab: {fileID: 3627781451740794339, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+  StartingSceneForBuilds: ISS_Level_Test
+  BaseDronePrefab: {fileID: 2704441938458339457, guid: 56448d978aff2c5438f416d464d62e47,
     type: 3}
   RescueDronePrefab: {fileID: 4243776889345255437, guid: beb0084364a99cf4191694e1b13d5b1e,
     type: 3}

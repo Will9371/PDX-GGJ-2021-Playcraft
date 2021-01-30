@@ -1,6 +1,7 @@
 ﻿using Playcraft;
 using UnityEngine;
 
+// Provides easy editor access to prefab settings
 public class DroneSettings : MonoBehaviour
 {
     [Header("Settings")]
@@ -11,10 +12,11 @@ public class DroneSettings : MonoBehaviour
     [Tooltip("If false: always rotate with mouse; if true, only rotate when left-button pressed")]
     [SerializeField] bool useClickDrag;
     [SerializeField] float maxBatteryCharge;
-    [Tooltip("Disable movement when below X value, reactivate when above Y value")]
-    [SerializeField] Vector2 engineActivationThresholds;
+    [SerializeField] [Range(0f, 1f)] float shutoffEngineWhenBelow;
+    [SerializeField] [Range(0f, 1f)] float reactivateEngineWhenAbove;
     [SerializeField] float pointLightIntensity;
     [SerializeField] float spotLightIntensity;
+    
     [Header("References")]
     [SerializeField] Rigidbody rb;
     [SerializeField] ZeroGravityMovement movement;
@@ -32,7 +34,7 @@ public class DroneSettings : MonoBehaviour
         rb.mass = mass;
         movement.thrust = thrust;
         battery.range = new Vector2(0, maxBatteryCharge);
-        emergencyShutdown.thresholds = engineActivationThresholds;
+        emergencyShutdown.thresholds = new Vector2(shutoffEngineWhenBelow, reactivateEngineWhenAbove);
         
         mouseMovement.sensitivity = rotationSensitivity;
         mouseMovement.enabled = !useClickDrag;

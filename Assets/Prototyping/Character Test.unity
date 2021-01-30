@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bindings:
-  - keys: 09000000
+  - keys: 69000000
     pressType: 0
     OnActive:
       m_PersistentCalls:
@@ -2929,21 +2929,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1342089868, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
-      propertyPath: sensitivity.x
-      value: 5
+    - target: {fileID: 1342089867, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: clampX
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1342089868, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
-      propertyPath: sensitivity.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
-      propertyPath: rotationSensitivity.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
-      propertyPath: rotationSensitivity.y
-      value: 5
+    - target: {fileID: 1342089867, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: flipXWhenOutOfRange
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3627781451740794336, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}

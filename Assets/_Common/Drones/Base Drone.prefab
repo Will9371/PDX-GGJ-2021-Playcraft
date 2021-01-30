@@ -390,7 +390,8 @@ MonoBehaviour:
   invertX: 0
   invertY: 1
   clampX: 0
-  xRange: {x: 0, y: 0}
+  flipXWhenOutOfRange: 1
+  xRange: {x: -90, y: 90}
   clampY: 0
   yRange: {x: 0, y: 0}
   self: {fileID: 3627781451740794336}
@@ -785,7 +786,8 @@ MonoBehaviour:
   rotationSensitivity: {x: 5, y: 5}
   useClickDrag: 1
   maxBatteryCharge: 40
-  engineActivationThresholds: {x: 0, y: 0.25}
+  shutoffEngineWhenBelow: 0
+  reactivateEngineWhenAbove: 0.25
   pointLightIntensity: 2
   spotLightIntensity: 2
   rb: {fileID: 4399053689325084241}

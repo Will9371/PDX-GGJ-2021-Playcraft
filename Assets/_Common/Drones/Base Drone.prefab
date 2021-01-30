@@ -919,6 +919,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   docked: 0
+  OnSetDocked:
+    m_PersistentCalls:
+      m_Calls: []
   dead: 0
   OnSetDead:
     m_PersistentCalls:

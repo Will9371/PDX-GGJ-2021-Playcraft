@@ -3795,6 +3795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Drone
       objectReference: {fileID: 0}
+    - target: {fileID: 4812235933843842317, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
 --- !u!1001 &2149841280204798957

@@ -9,22 +9,34 @@ public class SceneLoader : MonoBehaviour
     public List<GameObject> DronePrefabs;
     public SetActiveDrone DroneActivator;
 
+    string StartingScene;
     List<GameObject> Drones = new List<GameObject>();
 
     void Start()
     {
         SceneManager.sceneLoaded += InitializeNewScene;
 
-        var startingScene = StartingSceneForBuilds;
+        StartingScene = StartingSceneForBuilds;
         if (Application.isEditor)
         {
             var launchInfo = Resources.Load("LaunchInfo") as LaunchInfo;
             if (launchInfo != null && launchInfo.StartingScene != "System")
             {
-                startingScene = launchInfo.StartingScene;
+                StartingScene = launchInfo.StartingScene;
             }
         }
-        SceneManager.LoadScene(startingScene, LoadSceneMode.Additive);
+        SceneManager.LoadScene(StartingScene, LoadSceneMode.Additive);
+    }
+
+    public void RestartScene()
+    {
+        var unloadProcess = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+        unloadProcess.completed += HandleUnload;
+    }
+
+    void HandleUnload(AsyncOperation op)
+    {
+        SceneManager.LoadScene(StartingScene, LoadSceneMode.Additive);
     }
 
     void InitializeNewScene(Scene scene, LoadSceneMode mode)

@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+// * REFACTOR: separate drag into separate class
 public class ZeroGravityMovement : MonoBehaviour
 {
     public float thrust = 1f;
@@ -31,6 +32,10 @@ public class ZeroGravityMovement : MonoBehaviour
     {
         rb.AddForce(thrust * vector, ForceMode.Force);
     }
+    
+    bool autoDragActive;
+    public void ActivateAutoDrag(bool value) { autoDragActive = value; }
+    void Update() { if (autoDragActive) Drag(); }
     
     // Use internal value
     public void Drag() { Drag(drag, true); }

@@ -29,9 +29,10 @@ public class SetActiveDrone : MonoBehaviour
     {
         if (value && !canChange)
             return;
-    
+                
         inSelectionMode = value;
         selectionPanel.SetActive(value);
+        if (value) DisplayDockedDrones();
         
         if (value) DeactivateAll();
         else SetActiveDroneByIndex();
@@ -47,6 +48,12 @@ public class SetActiveDrone : MonoBehaviour
     {
         for (int i = 0; i < droneData.Length; i++)
             droneData[i].drone.SetActive(false);
+    }
+    
+    void DisplayDockedDrones()
+    {
+        for (int i = 0; i < droneData.Length; i++)
+            droneData[i].droneUI.SetActive(droneData[i].drone.state.docked);
     }
     
     [Serializable] public struct DroneActivation

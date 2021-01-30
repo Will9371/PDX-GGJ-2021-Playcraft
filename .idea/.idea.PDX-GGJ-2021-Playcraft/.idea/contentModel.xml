@@ -10,6 +10,8 @@
         <e p="_Common" t="Include">
           <e p="Drones" t="Include">
             <e p="DroneSettings.cs" t="Include" />
+            <e p="SetActiveDrone.cs" t="Include" />
+            <e p="SetDroneActive.cs" t="Include" />
           </e>
           <e p="Narrative" t="Include">
             <e p="DisplayNarrative.cs" t="Include" />

@@ -21,12 +21,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Common/Drones/DroneSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Transform/FreeMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Physics/ZeroGravityMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Raycast/ScreenRaycast.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/UI/DynamicBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Debug/PrintToConsole.cs" />
@@ -44,15 +44,18 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/DowncastSO.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/StoredFloatToPercent.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Bool/BinaryThresholdComponent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/ZeroGravityMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/UI/Cursor/GetMouseMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/DisplayPercentText.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Unity Hooks/Input/KeyboardInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Raycast/ScreenRaycast.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Rotation/TwoAxisRotation.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetActiveDrone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/ZeroGravityMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -96,7 +99,7 @@
       <updated>1611814617768</updated>
       <workItem from="1611814622567" duration="7420000" />
       <workItem from="1611887241560" duration="7066000" />
-      <workItem from="1611958587241" duration="6392000" />
+      <workItem from="1611958587241" duration="11453000" />
     </task>
     <servers />
   </component>

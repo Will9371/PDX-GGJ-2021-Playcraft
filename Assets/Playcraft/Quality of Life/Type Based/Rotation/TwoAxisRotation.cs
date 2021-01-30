@@ -22,10 +22,15 @@ namespace Playcraft
         bool xOutOfRange => x < xRange.x || x > xRange.y;
         bool _invertX => flipXWhenOutOfRange && xOutOfRange ? !invertX : invertX;
         
+        bool active;
+        public void SetEnabled(bool value) { active = value; }
+        
         void Awake() { if (!self) self = transform; }
 
         public void Rotate(Vector2 value)
         {
+            if (!active) return;
+        
             x += value.y * (invertY ? -1f : 1f);
             y += value.x * (_invertX ? -1f : 1f);
             

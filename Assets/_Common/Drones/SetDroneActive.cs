@@ -10,7 +10,8 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] GameObject lights;
     [SerializeField] DrainChargeBattery battery;
     [SerializeField] KeyboardInput interactionInput;
-    
+    [SerializeField] KeyboardInput beaconLauncher;
+
     Camera cam;
     AudioListener sound;
     DroneState state;
@@ -33,5 +34,9 @@ public class SetDroneActive : MonoBehaviour
         HUD.SetActive(value);
         lights.SetActive(value);
         battery.SetDrain(value);
+        if (beaconLauncher)
+        {
+            beaconLauncher.enabled = value;
+        }
     }
 }

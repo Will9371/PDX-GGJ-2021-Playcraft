@@ -50,9 +50,16 @@ public class DroneSettings : MonoBehaviour
         mouseMovement.enabled = !useClickDrag;
         mouseInput.enabled = useClickDrag;
         
-        pointLight.intensity = pointLightIntensity;
-        pointLight.enabled = pointLightIntensity > 0f;
-        spotLight.intensity = spotLightIntensity;
-        spotLight.enabled = spotLightIntensity > 0f;
+        if (pointLight != null)
+        {
+            pointLight.intensity = pointLightIntensity;
+            pointLight.enabled = pointLightIntensity > 0f;
+        }
+
+        if (spotLight != null)
+        {
+            spotLight.intensity = spotLightIntensity;
+            spotLight.enabled = spotLightIntensity > 0f;
+        }
     }
 }

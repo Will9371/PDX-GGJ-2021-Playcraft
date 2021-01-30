@@ -13,7 +13,9 @@
             <e p="DrainChargeBattery.cs" t="Include" />
             <e p="DroneSettings.cs" t="Include" />
             <e p="DroneState.cs" t="Include" />
+            <e p="FireProjectile.cs" t="Include" />
             <e p="FollowDrone.cs" t="Include" />
+            <e p="FreezePositionOnCollision.cs" t="Include" />
             <e p="SetActiveDrone.cs" t="Include" />
             <e p="SetDroneActive.cs" t="Include" />
           </e>
@@ -22,6 +24,18 @@
             <e p="NarrativeManager.cs" t="Include" />
             <e p="NarrativeSegment.cs" t="Include" />
           </e>
+          <e p="SceneLogic" t="Include">
+            <e p="LaunchInfo.cs" t="Include" />
+            <e p="SceneLoader.cs" t="Include" />
+            <e p="SceneSetupInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="LaunchManager.cs" t="Include" />
+        </e>
+        <e p="Env_Prefabs" t="Include">
+          <e p="DoorBlock.cs" t="Include" />
+          <e p="WallPanel.cs" t="Include" />
         </e>
         <e p="Playcraft" t="Include">
           <e p="_NEW" t="Include">
@@ -474,6 +488,7 @@
             <e p="SetImageColor.cs" t="Include" />
           </e>
         </e>
+        <e p="Thrust.cs" t="Include" />
         <e p="URP" t="Include">
           <e p="TutorialInfo" t="Include">
             <e p="Scripts" t="Include">

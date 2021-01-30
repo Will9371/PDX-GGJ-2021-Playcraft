@@ -1,5 +1,6 @@
 ﻿using Playcraft;
 using UnityEngine;
+//using UnityEngine.Events;
 
 public class SetDroneActive : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] DrainChargeBattery battery;
     [SerializeField] KeyboardInput interactionInput;
     [SerializeField] KeyboardInput beaconLauncher;
+    [SerializeField] FollowDrone follow;
+    //[SerializeField] ToggleInteraction deactivationAction;
 
     Camera cam;
     AudioListener sound;
-    DroneState state;
+    public DroneState state;
     
     void Awake()
     {
@@ -34,9 +37,21 @@ public class SetDroneActive : MonoBehaviour
         HUD.SetActive(value);
         lights.SetActive(value);
         battery.SetDrain(value);
+        
         if (beaconLauncher)
         {
             beaconLauncher.enabled = value;
         }
+        
+        if (value)
+        {
+            follow.enabled = false;
+        }
+        //Debug.Log((deactivationAction != null) + ", " + value);
+        //if (deactivationAction && !value)
+        //{
+        //    Debug.Log("Triggering deactivation action");
+        //    deactivationAction.Interact(false);
+        //}
     }
 }

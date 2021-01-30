@@ -817,9 +817,9 @@ MonoBehaviour:
     OnActive:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1989750860}
-          m_MethodName: Play
-          m_Mode: 1
+        - m_Target: {fileID: 1989750861}
+          m_MethodName: FadeInToPreset
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -855,14 +855,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1989750860}
-          m_MethodName: Stop
-          m_Mode: 1
+        - m_Target: {fileID: 1989750861}
+          m_MethodName: FadeOut
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.5
+            m_FloatArgument: 0.1
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -871,14 +871,14 @@ MonoBehaviour:
     OnActive:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 230547395}
-          m_MethodName: Play
-          m_Mode: 1
+        - m_Target: {fileID: 230547396}
+          m_MethodName: FadeInToPreset
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 1
+            m_FloatArgument: 0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -909,14 +909,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 230547395}
-          m_MethodName: Stop
-          m_Mode: 1
+        - m_Target: {fileID: 230547396}
+          m_MethodName: FadeOut
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.5
+            m_FloatArgument: 0.1
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -925,17 +925,6 @@ MonoBehaviour:
     OnActive:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 330823602}
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 330823603}
           m_MethodName: FadeInToPreset
           m_Mode: 4
@@ -943,7 +932,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0
+            m_FloatArgument: 0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -959,18 +948,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.3
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 330823602}
-          m_MethodName: Stop
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
+            m_FloatArgument: 0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -2107,6 +2085,8 @@ MonoBehaviour:
   battery: {fileID: 3568361738965447796}
   interactionInput: {fileID: 8352003009847186178}
   beaconLauncher: {fileID: 0}
+  follow: {fileID: 6246717271875747312}
+  state: {fileID: 0}
 --- !u!114 &2133419787339867849
 MonoBehaviour:
   m_ObjectHideFlags: 0

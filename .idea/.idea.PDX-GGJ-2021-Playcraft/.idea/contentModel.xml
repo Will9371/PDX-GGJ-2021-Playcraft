@@ -9,7 +9,9 @@
       <e p="Assets" t="Include">
         <e p="_Common" t="Include">
           <e p="Drones" t="Include">
+            <e p="DrainChargeBattery.cs" t="Include" />
             <e p="DroneSettings.cs" t="Include" />
+            <e p="FollowDrone.cs" t="Include" />
             <e p="SetActiveDrone.cs" t="Include" />
             <e p="SetDroneActive.cs" t="Include" />
           </e>

@@ -12,7 +12,7 @@ public class SetActiveDrone : MonoBehaviour
         SetActiveDroneByIndex();
     }
     
-    public int index;
+    int index;
     public void SetIndex(int value) 
     { 
         index = value;

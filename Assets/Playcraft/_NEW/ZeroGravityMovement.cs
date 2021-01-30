@@ -8,6 +8,7 @@ public class ZeroGravityMovement : MonoBehaviour
     public float drag = 1f;
     [SerializeField] Rigidbody rb;
     [SerializeField] UnityEvent OnAccelerate;
+    [SerializeField] UnityEvent OnDecelerate;
     
     bool disabled;
     public void SetDisabled(bool value) { disabled = value; }
@@ -27,17 +28,25 @@ public class ZeroGravityMovement : MonoBehaviour
     }
     
     // Use internal value
-    public void Drag() { Drag(drag); }
+    public void Drag() { Drag(drag, true); }
     
     // Use external value
-    public void Drag(float rate)
+    public void Drag(float rate) { Drag(rate, true); }
+    
+    // Increase drag with movement speed
+    public void DragNoMax(float rate) { Drag(rate, false); }
+    
+    Vector3 dragVector;
+    
+    void Drag(float rate, bool applyMax)
     {
-        var vector = -rb.velocity;
+        dragVector = -rb.velocity;
         
         // Decrease drag when slow to ease into a stop
-        if (vector.magnitude > 1) 
-            vector = vector.normalized; 
+        if (applyMax && dragVector.magnitude > 1) 
+            dragVector = dragVector.normalized; 
             
-        rb.AddForce(vector * rate, ForceMode.Force);
+        rb.AddForce(dragVector * rate, ForceMode.Force);
+        OnDecelerate.Invoke();
     }
 }

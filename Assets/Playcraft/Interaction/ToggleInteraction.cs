@@ -4,10 +4,8 @@ namespace Playcraft
 {
     public class ToggleInteraction : MonoBehaviour
     {
-        #pragma warning disable 0649
         [SerializeField] SO activate;
         [SerializeField] SO deactivate;
-        #pragma warning restore 0649
 
         SO message => isActive ? deactivate : activate;
         GameObject source => isActive ? null : gameObject;

@@ -8,6 +8,8 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] TwoAxisRotation rotation;
     [SerializeField] GameObject HUD;
     [SerializeField] GameObject lights;
+    [SerializeField] DrainChargeBattery battery;
+    [SerializeField] KeyboardInput interactionInput;
     
     public bool active;
     
@@ -26,8 +28,10 @@ public class SetDroneActive : MonoBehaviour
         cam.enabled = value;
         sound.enabled = value;
         movementInput.enabled = value;
+        interactionInput.enabled = value;
         rotation.SetEnabled(value);
         HUD.SetActive(value);
         lights.SetActive(value);
+        battery.SetDrain(value);
     }
 }

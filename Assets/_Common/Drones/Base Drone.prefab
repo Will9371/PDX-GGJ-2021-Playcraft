@@ -612,11 +612,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
-  m_Range: 50
-  m_SpotAngle: 60
-  m_InnerSpotAngle: 30
+  m_Range: 32
+  m_SpotAngle: 75.52226
+  m_InnerSpotAngle: 4.5999217
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 1
-  drag: 0
+  drag: 1
   rb: {fileID: 4399053689325084241}
   OnAccelerate:
     m_PersistentCalls:
@@ -1933,7 +1933,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 2
+            m_FloatArgument: 1
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -1948,22 +1948,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 4
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - tag: {fileID: 11400000, guid: 7779a11feb88a634e9c6e7e23f353604, type: 2}
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1162360422}
-          m_MethodName: Drag
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 4
+            m_FloatArgument: 10
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -2026,7 +2011,7 @@ Transform:
   m_GameObject: {fileID: 3627781451740794339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1998995640678888533}
   - {fileID: 1162360421}
@@ -2084,7 +2069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mass: 1
   thrust: 1
-  drag: 0
+  drag: 1
   interactionDistance: 2.5
   maxBatteryCharge: 40
   shutoffEngineWhenBelow: 0.01
@@ -2358,7 +2343,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 2
-  m_Range: 30
+  m_Range: 16
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

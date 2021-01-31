@@ -1,7 +1,7 @@
 ﻿using Playcraft.Dialog;
 using UnityEngine;
 
-public class OpeningMessage : MonoBehaviour
+public class GenerateTextMessage : MonoBehaviour
 {
     [SerializeField] TypewriterText typewriter;
     [SerializeField] string[] lines;

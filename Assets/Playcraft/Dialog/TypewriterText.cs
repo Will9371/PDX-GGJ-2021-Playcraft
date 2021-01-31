@@ -39,6 +39,7 @@ namespace Playcraft.Dialog
         {
             StopAllCoroutines();
             text.text = message;
+            OnComplete.Invoke();
         }
     }
 }

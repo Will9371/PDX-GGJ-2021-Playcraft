@@ -46,7 +46,6 @@
           <e p="LaunchManager.cs" t="Include" />
         </e>
         <e p="Env_Prefabs" t="Include">
-          <e p="DoorBlock.cs" t="Include" />
           <e p="WallPanel.cs" t="Include" />
         </e>
         <e p="Playcraft" t="Include">

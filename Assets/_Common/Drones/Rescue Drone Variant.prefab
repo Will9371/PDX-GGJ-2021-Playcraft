@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activate: {fileID: 11400000, guid: a3a1bdd4761431b47917e47c31a7d66b, type: 2}
   deactivate: {fileID: 11400000, guid: a72e396432365f24a80e71a09e750685, type: 2}
---- !u!114 &2540551219120378273
+--- !u!114 &1157128208770514792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,46 +102,16 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
-      propertyPath: tractorBeamInput
+      propertyPath: tractorBeam
       value: 
-      objectReference: {fileID: 2540551219120378273}
+      objectReference: {fileID: 1157128208770514792}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: deactivationAction
       value: 
       objectReference: {fileID: 3430868885951609274}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+    - target: {fileID: 2133419787339867849, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
-      propertyPath: responses.elements.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[1].Response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 347150148728281832, guid: 7615dca9ed9b3fa47ae84c6da792b735,
-        type: 3}
-      propertyPath: responses.elements.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      propertyPath: canAlwaysActivate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2604359783970747881, guid: 7615dca9ed9b3fa47ae84c6da792b735,

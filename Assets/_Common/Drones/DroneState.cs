@@ -2,6 +2,8 @@
 
 public class DroneState : MonoBehaviour
 {
+    [Tooltip("Prevent player from stranding Rescue Drone")]
+    public bool canAlwaysActivate;
     [Tooltip("Currently controlled by the player")]
     public bool active;
     [Tooltip("In a recharge area")]
@@ -12,6 +14,8 @@ public class DroneState : MonoBehaviour
     public bool dead;
     [Tooltip("Outputs dead state when it changes")]
     public BoolEvent OnSetDead;
+    
+    public bool canActivate => docked || active || canAlwaysActivate;
         
     public void SetDocked(bool value) 
     { 

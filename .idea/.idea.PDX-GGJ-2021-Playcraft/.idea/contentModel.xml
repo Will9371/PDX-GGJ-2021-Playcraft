@@ -17,6 +17,7 @@
             <e p="LockableDoor.cs" t="Include" />
           </e>
           <e p="Drones" t="Include">
+            <e p="ActivateDroneUI.cs" t="Include" />
             <e p="BlinkWarning.cs" t="Include" />
             <e p="DockDrone.cs" t="Include" />
             <e p="DrainChargeBattery.cs" t="Include" />

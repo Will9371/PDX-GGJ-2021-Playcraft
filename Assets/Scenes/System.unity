@@ -156,6 +156,7 @@ MonoBehaviour:
   - {fileID: 2667693236740446773, guid: 6d1845541631a9f41bebb8ec4938a879, type: 3}
   - {fileID: 4243776889345255437, guid: beb0084364a99cf4191694e1b13d5b1e, type: 3}
   DroneActivator: {fileID: 815457610}
+  NarrativeManager: {fileID: 1566192374}
 --- !u!4 &239434927
 Transform:
   m_ObjectHideFlags: 0

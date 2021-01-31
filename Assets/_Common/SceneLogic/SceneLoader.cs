@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour
     public string StartingSceneForBuilds;
     public List<GameObject> DronePrefabs;
     public SetActiveDrone DroneActivator;
+    public NarrativeManager NarrativeManager;
 
     string StartingScene;
     List<GameObject> Drones = new List<GameObject>();
@@ -75,5 +76,7 @@ public class SceneLoader : MonoBehaviour
             }
         }
         DroneActivator.SetActiveDroneByIndex();
+
+        setupInfo.GetComponentInChildren<NarrativeRelay>().NarrativeManager = NarrativeManager;
     }
 }

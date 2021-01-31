@@ -13,6 +13,9 @@
             <e p="RandomizeClip.cs" t="Include" />
             <e p="RandomizePitch.cs" t="Include" />
           </e>
+          <e p="Doors" t="Include">
+            <e p="LockableDoor.cs" t="Include" />
+          </e>
           <e p="Drones" t="Include">
             <e p="DockDrone.cs" t="Include" />
             <e p="DrainChargeBattery.cs" t="Include" />

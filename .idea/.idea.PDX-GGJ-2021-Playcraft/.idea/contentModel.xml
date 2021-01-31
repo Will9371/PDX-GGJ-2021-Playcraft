@@ -31,10 +31,10 @@
           </e>
           <e p="Narrative" t="Include">
             <e p="DisplayNarrative.cs" t="Include" />
+            <e p="GenerateTextMessage.cs" t="Include" />
             <e p="NarrativeManager.cs" t="Include" />
             <e p="NarrativeRelay.cs" t="Include" />
             <e p="NarrativeSegment.cs" t="Include" />
-            <e p="OpeningMessage.cs" t="Include" />
           </e>
           <e p="SceneLogic" t="Include">
             <e p="GameStartSettings.cs" t="Include" />

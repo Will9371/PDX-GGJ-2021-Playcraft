@@ -7,7 +7,8 @@ public class FollowDrone : MonoBehaviour
     [SerializeField] float pullMultiplier;
     [SerializeField] float stoppingDistance;
     [SerializeField] float maxPullStrength;
-    
+    [SerializeField] LineRenderer lineRenderer;
+
     Rigidbody rb;
     Vector3 targetDirection;
     Vector3 targetVector;
@@ -23,11 +24,24 @@ public class FollowDrone : MonoBehaviour
     
     Vector3 _acceleration;
     float _deceleration;
-    
+
+    private void OnEnable()
+    {
+        lineRenderer.enabled = true;
+        UpdateLineRenderer();
+    }
+
+    private void OnDisable()
+    {
+        lineRenderer.enabled = false;
+    }
+
     void Update()
     {
         if (!target) return;
-        
+
+        UpdateLineRenderer();
+
         targetDirection = (target.position - self.position).normalized;
         targetDistance = Vector3.Distance(target.position, self.position);
         targetVector = Mathf.Sqrt(targetDistance) * targetDirection;
@@ -45,6 +59,14 @@ public class FollowDrone : MonoBehaviour
         {
             _deceleration = rb.velocity.magnitude * (stoppingDistance - targetDistance);
             movement.DragNoMax(_deceleration);
+        }
+    }
+
+    void UpdateLineRenderer()
+    {
+        for (var i = 0; i < lineRenderer.positionCount; i++)
+        {
+            lineRenderer.SetPosition(i, Vector3.Lerp(transform.position, target.position + Vector3.down * 0.5f, i / (lineRenderer.positionCount - 1)));
         }
     }
 }

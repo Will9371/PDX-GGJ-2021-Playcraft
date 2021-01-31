@@ -7,8 +7,8 @@ public class SetActiveDrone : MonoBehaviour
     public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     
-    DroneState currentDroneState => droneData[index].drone.state;
-    bool canChange => currentDroneState.docked || currentDroneState.dead;
+    //DroneState currentDroneState => droneData[index].drone.state;
+    //bool canChange => currentDroneState.docked || currentDroneState.dead;
     
     void Start()
     {
@@ -27,8 +27,8 @@ public class SetActiveDrone : MonoBehaviour
     bool inSelectionMode;
     public void SetSelectionMode(bool value)
     {
-        if (value && !canChange)
-            return;
+        //if (value && !canChange)
+        //    return;
                 
         inSelectionMode = value;
         selectionPanel.SetActive(value);
@@ -53,7 +53,10 @@ public class SetActiveDrone : MonoBehaviour
     void DisplayDockedDrones()
     {
         for (int i = 0; i < droneData.Length; i++)
-            droneData[i].droneUI.SetActive(droneData[i].drone.state.docked);
+        {
+            var state = droneData[i].drone.state;
+            droneData[i].droneUI.SetActive(state.docked || state.active);
+        }
     }
     
     [Serializable] public struct DroneActivation

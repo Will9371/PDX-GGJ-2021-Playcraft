@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342089864}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c8350139eac88d4291853dccad1b51d, type: 3}
   m_Name: 
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342089864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10c475d5b6f50f54584be9933a14ad5f, type: 3}
   m_Name: 
@@ -2055,7 +2055,7 @@ MonoBehaviour:
   pointLightIntensity: 2
   spotLightIntensity: 2
   rotationSensitivity: {x: 5, y: 5}
-  useClickDrag: 1
+  useClickDrag: 0
   rb: {fileID: 4399053689325084241}
   movement: {fileID: 1162360422}
   mouseMovement: {fileID: 1342089868}

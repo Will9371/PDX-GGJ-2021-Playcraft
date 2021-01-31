@@ -8,6 +8,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Common" t="Include">
+          <e p="Audio" t="Include">
+            <e p="LoopWithPause.cs" t="Include" />
+            <e p="RandomizeClip.cs" t="Include" />
+            <e p="RandomizePitch.cs" t="Include" />
+          </e>
           <e p="Drones" t="Include">
             <e p="DockDrone.cs" t="Include" />
             <e p="DrainChargeBattery.cs" t="Include" />
@@ -488,7 +493,6 @@
             <e p="SetImageColor.cs" t="Include" />
           </e>
         </e>
-        <e p="Thrust.cs" t="Include" />
         <e p="URP" t="Include">
           <e p="TutorialInfo" t="Include">
             <e p="Scripts" t="Include">

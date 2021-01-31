@@ -11,7 +11,9 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] GameObject lights;
     [SerializeField] DrainChargeBattery battery;
     [SerializeField] KeyboardInput interactionInput;
-    [SerializeField] KeyboardInput beaconLauncher;
+    [SerializeField] KeyboardInput beaconLauncherInput;
+    [SerializeField] KeyboardInput tractorBeamInput;
+    [SerializeField] KeyboardInput empInput;
     [SerializeField] FollowDrone follow;
     [SerializeField] GameObject lowBatterySound;
     //[SerializeField] ToggleInteraction deactivationAction;
@@ -40,11 +42,19 @@ public class SetDroneActive : MonoBehaviour
         battery.SetDrain(value);
         lowBatterySound.SetActive(value);
         
-        if (beaconLauncher)
+        if (beaconLauncherInput)
         {
-            beaconLauncher.enabled = value;
+            beaconLauncherInput.enabled = value;
         }
-        
+        if (tractorBeamInput)
+        {
+            tractorBeamInput.enabled = value;
+        }
+        if (empInput)
+        {
+            empInput.enabled = value;
+        }
+
         if (value)
         {
             follow.enabled = false;

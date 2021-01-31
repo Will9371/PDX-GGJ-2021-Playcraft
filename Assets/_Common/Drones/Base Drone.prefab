@@ -2237,7 +2237,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 57a22d2aed0127f4ca05f31d280c3549, type: 3}
     m_FontSize: 155
     m_FontStyle: 0
     m_BestFit: 0
@@ -2537,7 +2537,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 57a22d2aed0127f4ca05f31d280c3549, type: 3}
     m_FontSize: 155
     m_FontStyle: 0
     m_BestFit: 0
@@ -3676,6 +3676,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7771644227196439861, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 57a22d2aed0127f4ca05f31d280c3549,
+        type: 3}
     - target: {fileID: 8466757661022955002, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
         type: 3}
       propertyPath: m_Name

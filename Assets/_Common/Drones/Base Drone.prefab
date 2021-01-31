@@ -2664,7 +2664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bindings:
-  - keys: 65000000
+  - keys: 43010000
     pressType: 0
     OnActive:
       m_PersistentCalls:

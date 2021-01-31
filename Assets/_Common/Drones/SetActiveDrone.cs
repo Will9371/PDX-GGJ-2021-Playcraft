@@ -33,9 +33,19 @@ public class SetActiveDrone : MonoBehaviour
         inSelectionMode = value;
         selectionPanel.SetActive(value);
         if (value) DisplayDockedDrones();
-        
-        if (value) DeactivateAll();
-        else SetActiveDroneByIndex();
+
+        if (value)
+        {
+            DeactivateAll();
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            SetActiveDroneByIndex();
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
     
     public void SetActiveDroneByIndex()

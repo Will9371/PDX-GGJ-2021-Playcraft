@@ -1036,14 +1036,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182462594}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5c43f92433f284a48bf45ac9c8d8de11, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1085,7 +1085,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2086,7 +2086,8 @@ MonoBehaviour:
   interactionInput: {fileID: 8352003009847186178}
   beaconLauncher: {fileID: 0}
   follow: {fileID: 6246717271875747312}
-  state: {fileID: 0}
+  lowBatterySound: {fileID: 1182462594}
+  state: {fileID: 2133419787339867849}
 --- !u!114 &2133419787339867849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,6 +2153,146 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &3765879918562164471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829471695764482310}
+  - component: {fileID: 6124091174390031127}
+  - component: {fileID: 7516434535797497140}
+  - component: {fileID: 5643909561149715665}
+  - component: {fileID: 5616945337271421745}
+  - component: {fileID: 7589648067389574579}
+  m_Layer: 5
+  m_Name: Low Power Notification
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1829471695764482310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 4812235933843842317}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 120}
+  m_SizeDelta: {x: 2297.9978, y: 403.66638}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6124091174390031127
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_CullTransparentMesh: 0
+--- !u!114 &7516434535797497140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.54467607, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 155
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 162
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'WARNING: LOW POWER
+
+    Return to Charging Station'
+--- !u!114 &5643909561149715665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &5616945337271421745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462a51c4e55952544ac289bc7e19178c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 7516434535797497140}
+--- !u!114 &7589648067389574579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765879918562164471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4210d352c2c3b42b1ccb0f05c0a822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDelay: 0
+  repeatRate: 0.5
+  Output:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7516434535797497140}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  activateWithEnabled: 1
 --- !u!1 &4304409931946816607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,7 +2533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'No Power:
+  m_Text: 'ERROR: NO POWER
 
     Press Tab to select a new drone'
 --- !u!114 &8961006119634732078
@@ -2548,6 +2689,7 @@ RectTransform:
   - {fileID: 145696415939336194}
   - {fileID: 9114957698501547145}
   - {fileID: 5664882889263045318}
+  - {fileID: 1829471695764482310}
   m_Father: {fileID: 3627781451740794336}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2730,6 +2872,32 @@ MonoBehaviour:
   thrustDrain: 1
   brakeDrain: 1
   minVelocityForBrakeDrain: 0.25
+  lowBatteryThreshold: 0.25
+  LowBattery:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1182462596}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3765879918562164471}
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5519816051569523605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2769,6 +2937,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   startAtMaximum: 1
+  percent: 0
 --- !u!114 &338731470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3253,6 +3422,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bd7906c93b77946bb090fefdf71549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &145696415939336194 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6274982768326122444, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
+    type: 3}
+  m_PrefabInstance: {fileID: 6129585505452032974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &178902738541740479 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6299197349264228977, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
@@ -3265,9 +3440,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &145696415939336194 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6274982768326122444, guid: 6fc3224c29c3eda47a1429f9ebf3c077,
-    type: 3}
-  m_PrefabInstance: {fileID: 6129585505452032974}
-  m_PrefabAsset: {fileID: 0}

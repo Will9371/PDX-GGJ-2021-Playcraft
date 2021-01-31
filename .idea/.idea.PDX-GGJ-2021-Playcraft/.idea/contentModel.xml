@@ -17,6 +17,7 @@
             <e p="LockableDoor.cs" t="Include" />
           </e>
           <e p="Drones" t="Include">
+            <e p="BlinkWarning.cs" t="Include" />
             <e p="DockDrone.cs" t="Include" />
             <e p="DrainChargeBattery.cs" t="Include" />
             <e p="DroneSettings.cs" t="Include" />
@@ -30,9 +31,11 @@
           <e p="Narrative" t="Include">
             <e p="DisplayNarrative.cs" t="Include" />
             <e p="NarrativeManager.cs" t="Include" />
+            <e p="NarrativeRelay.cs" t="Include" />
             <e p="NarrativeSegment.cs" t="Include" />
           </e>
           <e p="SceneLogic" t="Include">
+            <e p="GameStartSettings.cs" t="Include" />
             <e p="LaunchInfo.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
             <e p="SceneSetupInfo.cs" t="Include" />
@@ -54,6 +57,7 @@
             <e p="LerpColor.cs" t="Include" />
             <e p="RespondToComponentTag.cs" t="Include" />
             <e p="StoredFloatToPercent.cs" t="Include" />
+            <e p="ToggleOverTime.cs" t="Include" />
             <e p="ZeroGravityMovement.cs" t="Include" />
           </e>
           <e p="Additive Scenes" t="Include">

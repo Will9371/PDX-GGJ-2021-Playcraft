@@ -65,7 +65,7 @@ public class SetActiveDrone : MonoBehaviour
         for (int i = 0; i < droneData.Length; i++)
         {
             var state = droneData[i].drone.state;
-            droneData[i].droneUI.SetActive(state.docked || state.active);
+            droneData[i].droneUI.SetActive(state.canActivate);
         }
     }
     

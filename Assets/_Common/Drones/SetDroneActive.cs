@@ -14,7 +14,7 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] KeyboardInput beaconLauncher;
     [SerializeField] FollowDrone follow;
     [SerializeField] GameObject lowBatterySound;
-    //[SerializeField] ToggleInteraction deactivationAction;
+    [SerializeField] GameObject rechargeSound;
 
     Camera cam;
     AudioListener sound;
@@ -39,6 +39,7 @@ public class SetDroneActive : MonoBehaviour
         lights.SetActive(value);
         battery.SetDrain(value);
         lowBatterySound.SetActive(value);
+        rechargeSound.SetActive(value);
         
         if (beaconLauncher)
         {

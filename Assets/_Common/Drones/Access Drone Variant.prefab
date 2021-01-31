@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: pointLight
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: maxBatteryCharge
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_Enabled
@@ -233,6 +237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519816051569523605, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: range.y
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8856837606632293993, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}

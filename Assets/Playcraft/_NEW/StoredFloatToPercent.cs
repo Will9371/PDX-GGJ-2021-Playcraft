@@ -7,7 +7,7 @@ public class StoredFloatToPercent : MonoBehaviour
     [SerializeField] bool startAtMaximum;
     
     float storage;
-    float percent;
+    [HideInInspector] public float percent;
     
     void Start()
     {

@@ -72,6 +72,6 @@ public class SetActiveDrone : MonoBehaviour
     [Serializable] public struct DroneActivation
     {
         public SetDroneActive drone;
-        public GameObject droneUI;
+        public ActivateDroneUI droneUI;
     }
 }

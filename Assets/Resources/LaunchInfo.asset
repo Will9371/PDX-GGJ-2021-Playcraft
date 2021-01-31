@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323c6ba0fcb99fa47b7622bfc02c50fd, type: 3}
   m_Name: LaunchInfo
   m_EditorClassIdentifier: 
-  StartingScene: ISS_Level_Test
+  StartingScene: Character Test

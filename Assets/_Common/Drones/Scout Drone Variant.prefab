@@ -359,6 +359,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 230547395, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9dbd325f6f13db4b98e5110b05b05c7, type: 3}
+    - target: {fileID: 330823602, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 527466022, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d3b9af140edfb543b969f4fd6e7d9d4, type: 3}
     - target: {fileID: 789730939, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -379,6 +391,18 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1769851021, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d3b9af140edfb543b969f4fd6e7d9d4, type: 3}
+    - target: {fileID: 1989750860, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9dbd325f6f13db4b98e5110b05b05c7, type: 3}
+    - target: {fileID: 2016922356, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e3acc7e6cd863744b1acb4c8fec3ae0, type: 3}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: beaconLauncher
       value: 

@@ -72,6 +72,9 @@
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneState.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetActiveDrone.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/SceneLogic/SceneLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/OpeningMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Playcraft/Dialog/TypewriterText.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -116,7 +119,8 @@
       <workItem from="1611814622567" duration="7420000" />
       <workItem from="1611887241560" duration="7066000" />
       <workItem from="1611958587241" duration="23938000" />
-      <workItem from="1612040835591" duration="16749000" />
+      <workItem from="1612040835591" duration="17344000" />
+      <workItem from="1612129514648" duration="1581000" />
     </task>
     <servers />
   </component>

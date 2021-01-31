@@ -13,23 +13,32 @@ namespace Playcraft.Dialog
         [Tooltip("In characters per second")]
         [SerializeField] float speed = 10;
         #pragma warning restore 0649
+        
+        string message;
 
         public void Input(string value)
         {
-            StartCoroutine(TypeText(value));
+            message = value;
+            StartCoroutine(TypeText());
         }
         
-        IEnumerator TypeText(string value)
+        IEnumerator TypeText()
         {
             text.text = "";
 
-            foreach (var character in value)
+            foreach (var character in message)
             {
                 text.text += character;
                 yield return new WaitForSeconds(1/speed);
             }
             
             OnComplete.Invoke();
+        }
+        
+        public void Skip()
+        {
+            StopAllCoroutines();
+            text.text = message;
         }
     }
 }

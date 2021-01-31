@@ -78,5 +78,6 @@ public class SceneLoader : MonoBehaviour
         DroneActivator.SetActiveDroneByIndex();
 
         setupInfo.GetComponentInChildren<NarrativeRelay>().NarrativeManager = NarrativeManager;
+        DroneActivator.ToggleSelectionMode();
     }
 }

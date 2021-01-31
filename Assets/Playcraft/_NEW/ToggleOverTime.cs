@@ -23,7 +23,6 @@ public class ToggleOverTime : MonoBehaviour
 
     public void SetActive(bool value)
     {
-        Debug.Log(value);
         CancelInvoke(nameof(Toggle));
         if (value) InvokeRepeating(nameof(Toggle), startDelay, repeatRate);
     }

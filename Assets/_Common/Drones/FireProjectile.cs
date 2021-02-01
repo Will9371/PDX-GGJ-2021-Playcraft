@@ -6,6 +6,9 @@ public class FireProjectile : MonoBehaviour
 {
     public GameObject Projectile;
     public float Speed = 2f;
+    public int Limit = 3;
+
+    public List<GameObject> SpawnedProjectiles = new List<GameObject>();
 
     public void Fire()
     {
@@ -14,6 +17,13 @@ public class FireProjectile : MonoBehaviour
         if (rb != null)
         {
             rb.velocity = transform.forward * Speed;
+        }
+        SpawnedProjectiles.Add(projectile);
+
+        while (SpawnedProjectiles.Count > Limit)
+        {
+            Destroy(SpawnedProjectiles[0]);
+            SpawnedProjectiles.RemoveAt(0);
         }
     }
 }

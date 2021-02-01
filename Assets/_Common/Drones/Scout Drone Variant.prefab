@@ -76,6 +76,8 @@ MonoBehaviour:
   Projectile: {fileID: 7896973048211110317, guid: cb337c52f11616744a2e8a9ac7a0d68c,
     type: 3}
   Speed: 4
+  Limit: 3
+  SpawnedProjectiles: []
 --- !u!1 &109781995517048331
 GameObject:
   m_ObjectHideFlags: 0

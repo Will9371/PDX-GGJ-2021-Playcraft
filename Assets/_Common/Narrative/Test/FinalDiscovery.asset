@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: FinalDiscovery
   m_EditorClassIdentifier: 
   index: 0
-  text: Rummaging through the cabinets, you find a collection of notes written to
-    a "Sam Alexander." They've been stuffed in a corner, like someone was hiding
+  sprite: {fileID: 0}
+  title: 
+  description: Rummaging through the cabinets, you find a bunch of documents referencing
+    a "Sam Alexander". They're stuffed in a corner as if someone were trying to hide
     them.

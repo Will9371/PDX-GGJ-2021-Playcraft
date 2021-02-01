@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Recorder
   m_EditorClassIdentifier: 
   index: 0
-  text: The voice recorder plays back someone's poetry. Sad, lonely stuff.
+  sprite: {fileID: 0}
+  title: 
+  description: Voice recordings of someone's poetry. Sad, lonely stuff.

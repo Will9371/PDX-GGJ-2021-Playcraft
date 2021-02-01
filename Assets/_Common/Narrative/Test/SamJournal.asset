@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: SamJournal
   m_EditorClassIdentifier: 
   index: 0
-  text: Diary belonged to someone named Sam. They seemed concerned that their crewmate
-    Alex was becoming more obsessive and reclusive over time.
+  sprite: {fileID: 0}
+  title: 
+  description: Sam's journal. It's mostly upbeat, until it mentions Alex. There are
+    concerns about Alex's reclusivenes and obsession with rescue. Looks like Sam
+    gave up on that long ago.

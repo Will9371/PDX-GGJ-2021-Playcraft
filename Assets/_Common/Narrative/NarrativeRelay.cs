@@ -11,9 +11,10 @@ public class NarrativeRelay : MonoBehaviour
         NarrativeManager.Show(segment);
     }
 
-    public string[] GetFoundText()
+    public void Refresh()
+
     {
-        return NarrativeManager.GetFoundText();
+        NarrativeManager.RefreshDisplay();
     }
 
     public void FindSegment(NarrativeSegment segment)

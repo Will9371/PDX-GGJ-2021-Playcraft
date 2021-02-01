@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: BlanketFort
   m_EditorClassIdentifier: 
   index: 0
-  text: A blanket fort? Wow, someone was having fun.
+  sprite: {fileID: 0}
+  title: 
+  description: A blanket fort? Someone's been having fun.

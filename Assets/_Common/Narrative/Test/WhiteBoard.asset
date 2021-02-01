@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: WhiteBoard
   m_EditorClassIdentifier: 
   index: 0
-  text: A whiteboard covered in math scribbles. Looks like they were working on something
-    important.
+  sprite: {fileID: 0}
+  title: 
+  description: Some math proofs have been scratched out in favor of about 10 smiley
+    faces.

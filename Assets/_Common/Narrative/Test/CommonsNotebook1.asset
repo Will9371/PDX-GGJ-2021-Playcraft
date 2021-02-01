@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: CommonsNotebook1
   m_EditorClassIdentifier: 
   index: 0
-  text: Looks like an exercise log for the crew.
+  sprite: {fileID: 0}
+  title: 
+  description: Exercise logs and sign-up sheets. Toward the end, only Alex looks
+    like they were using the equipment much.

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Misc_Tech_D
   m_EditorClassIdentifier: 
   index: 0
-  text: Audio equipment. Was this person making music?
+  sprite: {fileID: 0}
+  title: 
+  description: What even is this?

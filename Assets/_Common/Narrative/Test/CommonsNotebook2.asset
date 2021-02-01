@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: CommonsNotebook2
   m_EditorClassIdentifier: 
   index: 0
-  text: Ration logs. Looks like they were running pretty low for a while.
+  sprite: {fileID: 0}
+  title: 
+  description: Ration logs. Looks like they were running low on food for quite a
+    while.

@@ -30,6 +30,7 @@
             <e p="SetDroneActive.cs" t="Include" />
           </e>
           <e p="Narrative" t="Include">
+            <e p="DisplayItemUI.cs" t="Include" />
             <e p="DisplayNarrative.cs" t="Include" />
             <e p="GenerateTextMessage.cs" t="Include" />
             <e p="NarrativeManager.cs" t="Include" />

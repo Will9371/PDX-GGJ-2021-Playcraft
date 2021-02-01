@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: WelcomeScreen
   m_EditorClassIdentifier: 
   index: 0
-  text: This was an old mining station. Now that power's restored, the terminal's
-    showing crew logs. Most are marked MIA, but two remain - Sam and Alex.
+  sprite: {fileID: 0}
+  title: 
+  description: Looks like this is an old mining station. The crew list is mostly
+    MIA. Just one entry remains, but the screen is glitching out over the name.

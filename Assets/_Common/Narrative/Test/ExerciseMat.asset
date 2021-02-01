@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ExerciseMat
   m_EditorClassIdentifier: 
   index: 0
-  text: An exercise mat. Hasn't been used in a while.
+  sprite: {fileID: 0}
+  title: 
+  description: An exercise mat. It looks well used.

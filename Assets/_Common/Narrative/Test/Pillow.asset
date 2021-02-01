@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Pillow
   m_EditorClassIdentifier: 
   index: 0
-  text: A pillow.
+  sprite: {fileID: 0}
+  title: 
+  description: Sleep wherever, I guess.

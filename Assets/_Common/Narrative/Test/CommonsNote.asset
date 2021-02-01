@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: CommonsNote
   m_EditorClassIdentifier: 
   index: 0
-  text: There are a variety of notes stuck to the wall. This one reads "Stay out
-    of my room, Alex!"
+  sprite: {fileID: 0}
+  title: 
+  description: An assortment of notes are stuck to the wall. This one reads "Stay
+    OUT of my room, Alex!!"

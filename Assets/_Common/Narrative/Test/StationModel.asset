@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: StationModel
   m_EditorClassIdentifier: 
   index: 0
-  text: A 3D model of the space station. Looks like we're in the bottom-most room.
+  sprite: {fileID: 0}
+  title: 
+  description: A 3D model of the station. Looks like we're in the bottom-most room.

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: CommonsFoodCabinets
   m_EditorClassIdentifier: 
   index: 0
-  text: Food cabinets. All empty.
+  sprite: {fileID: 0}
+  title: 
+  description: Food cabinets. All empty, looks like.

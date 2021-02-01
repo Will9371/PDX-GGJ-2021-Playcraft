@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: FridgeBot
   m_EditorClassIdentifier: 
   index: 0
-  text: A drink cooler. That's odd...
+  sprite: {fileID: 0}
+  title: 
+  description: A drink cooler bot. Nice.

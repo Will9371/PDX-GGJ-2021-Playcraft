@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Misc_Tech_A
   m_EditorClassIdentifier: 
   index: 0
-  text: Looks like a switchboard.
+  sprite: {fileID: 0}
+  title: 
+  description: Looks like a sound mixer. Were they recording music?

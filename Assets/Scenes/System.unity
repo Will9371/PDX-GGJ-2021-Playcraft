@@ -2652,6 +2652,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1566192377}
   - component: {fileID: 1566192374}
+  - component: {fileID: 1566192376}
+  - component: {fileID: 1566192375}
   m_Layer: 0
   m_Name: Progress Narration Control
   m_TagString: Untagged
@@ -2682,6 +2684,59 @@ MonoBehaviour:
     uiObject: {fileID: 1369538090}
     found: 0
   narrativePanel: {fileID: 5951576041452071567}
+  OnAllFound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566192375}
+        m_MethodName: Print
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: all found!
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1566192375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566192373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f287688619ef749982623c75d2bdf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1566192376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566192373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ff97c90a14fa943ab68769d27248c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 0
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566192374}
+        m_MethodName: CheckFoundStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1566192377
 Transform:
   m_ObjectHideFlags: 0

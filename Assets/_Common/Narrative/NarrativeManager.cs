@@ -1,10 +1,12 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NarrativeManager : MonoBehaviour
 {
     [SerializeField] SegmentData[] allSegments;
     [SerializeField] GameObject narrativePanel;
+    [SerializeField] UnityEvent OnAllFound;
     
     void Start()
     {
@@ -27,6 +29,17 @@ public class NarrativeManager : MonoBehaviour
     {    
         for (int i = 0; i < allSegments.Length; i++)
             allSegments[i].uiObject.SetActive(allSegments[i].found);
+    }
+    
+    public void CheckFoundStatus()
+    {
+        var allFound = true;
+    
+        foreach (var segment in allSegments)
+            if (!segment.found)
+                allFound = false;
+                
+        if (allFound) OnAllFound.Invoke();
     }
     
     [Serializable] public struct SegmentData

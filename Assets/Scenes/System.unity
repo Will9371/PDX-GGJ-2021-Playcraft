@@ -1141,7 +1141,7 @@ PrefabInstance:
     - target: {fileID: 5416810308068265756, guid: aa260feaeb9b567458032d23130e087f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5416810308068265759, guid: aa260feaeb9b567458032d23130e087f,
         type: 3}
@@ -1606,11 +1606,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5951576041452071567}
+      objectReference: {fileID: 1566192374}
     - target: {fileID: 3498573199598644299, guid: 3dc30047ae6cd454983f93ae03f826fe,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: SetPanelActive
       objectReference: {fileID: 0}
     - target: {fileID: 3498573199598644299, guid: 3dc30047ae6cd454983f93ae03f826fe,
         type: 3}
@@ -2669,6 +2669,7 @@ MonoBehaviour:
   - segment: {fileID: 11400000, guid: 414e1a0ff64090f44b02ba2cb2a0296f, type: 2}
     uiObject: {fileID: 1369538089}
     found: 0
+  narrativePanel: {fileID: 0}
 --- !u!4 &1566192377
 Transform:
   m_ObjectHideFlags: 0
@@ -4038,12 +4039,6 @@ GameObject:
 --- !u!224 &5951576041452071566 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9124039090280244178, guid: 76901bb72c0fbbc44999a39cac94e1e1,
-    type: 3}
-  m_PrefabInstance: {fileID: 3172548264202815836}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5951576041452071567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9124039090280244179, guid: 76901bb72c0fbbc44999a39cac94e1e1,
     type: 3}
   m_PrefabInstance: {fileID: 3172548264202815836}
   m_PrefabAsset: {fileID: 0}

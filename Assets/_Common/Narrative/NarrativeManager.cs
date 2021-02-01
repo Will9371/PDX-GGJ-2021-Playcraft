@@ -4,14 +4,21 @@ using UnityEngine;
 public class NarrativeManager : MonoBehaviour
 {
     [SerializeField] SegmentData[] allSegments;
+    [SerializeField] GameObject narrativePanel;
     
     public void FindSegment(NarrativeSegment segment)
     {
         allSegments[segment.index].found = true;
     }
     
-    public void RefreshDisplay()
+    public void SetPanelActive(bool value)
     {
+        narrativePanel.SetActive(value);
+        if (value) RefreshDisplay();
+    }
+        
+    public void RefreshDisplay()
+    {    
         for (int i = 0; i < allSegments.Length; i++)
             allSegments[i].uiObject.SetActive(allSegments[i].found);
     }

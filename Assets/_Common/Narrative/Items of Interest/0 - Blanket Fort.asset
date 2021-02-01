@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1248e3479a98a3e488522bedf0332b94, type: 3}
-  m_Name: 0 - Beginning
+  m_Name: 0 - Blanket Fort
   m_EditorClassIdentifier: 
   index: 0
-  text: It Begins!
+  sprite: {fileID: 21300000, guid: 8d241a5f44b51404a938d764f447d7d6, type: 3}
+  title: Blanket Fort
+  description: A suprisingly elaborate setup.  Parts of the interior are knocked
+    about and there are slight traces of blood, as if a fight got out of hand.

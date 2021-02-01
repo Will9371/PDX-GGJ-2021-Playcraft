@@ -1,10 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Playcraft.Dialog;
 
 public class NarrativeManager : MonoBehaviour
 {
     [SerializeField] SegmentData[] allSegments;
+    public GameObject NarrativePanel;
+    public TypewriterText TypewriterText;
+
+    public void Show(NarrativeSegment segment)
+    {
+        allSegments[0].segment = segment;
+        allSegments[0].found = true;
+        NarrativePanel.SetActive(true);
+    }
+
+    public void TryDismiss()
+    {
+        if (TypewriterText.IsDone())
+        {
+            NarrativePanel.SetActive(false);
+        }
+        else
+        {
+            TypewriterText.Skip();
+        }
+    }
     
     public void FindSegment(NarrativeSegment segment)
     {

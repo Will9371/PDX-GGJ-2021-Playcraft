@@ -41,5 +41,10 @@ namespace Playcraft.Dialog
             text.text = message;
             OnComplete.Invoke();
         }
+
+        public bool IsDone()
+        {
+            return text.text == message;
+        }
     }
 }

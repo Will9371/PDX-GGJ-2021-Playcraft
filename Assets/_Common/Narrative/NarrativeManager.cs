@@ -6,6 +6,12 @@ public class NarrativeManager : MonoBehaviour
     [SerializeField] SegmentData[] allSegments;
     [SerializeField] GameObject narrativePanel;
     
+    void Start()
+    {
+        foreach (var segment in allSegments)
+            segment.uiObject.Initialize(segment.segment);
+    }
+    
     public void FindSegment(NarrativeSegment segment)
     {
         allSegments[segment.index].found = true;
@@ -26,7 +32,7 @@ public class NarrativeManager : MonoBehaviour
     [Serializable] public struct SegmentData
     {
         public NarrativeSegment segment;
-        public GameObject uiObject;
+        public DisplayItemUI uiObject;
         public bool found;
     }
 }

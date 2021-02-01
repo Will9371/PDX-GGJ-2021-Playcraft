@@ -5,5 +5,7 @@ using Playcraft;
 public class NarrativeSegment : SO
 {
     public int index;
-    public string text;
+    public Sprite sprite;
+    public string title;
+    public string description;
 }

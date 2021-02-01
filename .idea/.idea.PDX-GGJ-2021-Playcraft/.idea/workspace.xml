@@ -49,13 +49,10 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Time/TimedIDRelay.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Dialog/FilterRepeatEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/DowncastSO.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Bool/BinaryThresholdComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/UI/Cursor/GetMouseMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/DisplayPercentText.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Unity Hooks/Input/KeyboardInput.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Raycast/ScreenRaycast.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Rotation/TwoAxisRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneSettings.cs" />
@@ -77,6 +74,10 @@
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/OpeningMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Dialog/TypewriterText.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/GenerateTextMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayNarrative.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeRelay.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -122,7 +123,7 @@
       <workItem from="1611887241560" duration="7066000" />
       <workItem from="1611958587241" duration="23938000" />
       <workItem from="1612040835591" duration="17344000" />
-      <workItem from="1612129514648" duration="3239000" />
+      <workItem from="1612129514648" duration="5192000" />
     </task>
     <servers />
   </component>

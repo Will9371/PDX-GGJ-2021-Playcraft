@@ -1,6 +1,7 @@
-﻿using UnityEngine;
-using Playcraft;
+﻿//using UnityEngine;
 
+// OBSOLETE
+/*
 public class DisplayNarrative : MonoBehaviour
 {
     [SerializeField] NarrativeManager narrative;
@@ -20,4 +21,4 @@ public class DisplayNarrative : MonoBehaviour
         
         Output.Invoke(result);  
     }
-}
+}*/

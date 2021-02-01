@@ -1732,7 +1732,7 @@ PrefabInstance:
     - target: {fileID: 7467633232754682217, guid: 3dc30047ae6cd454983f93ae03f826fe,
         type: 3}
       propertyPath: m_Text
-      value: SHINE LIGHT
+      value: SCAN OBJECTS
       objectReference: {fileID: 0}
     - target: {fileID: 7467633232754682217, guid: 3dc30047ae6cd454983f93ae03f826fe,
         type: 3}

@@ -16,10 +16,10 @@ MonoBehaviour:
   m_AdvancedMode: 0
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 9
   intensity:
     m_OverrideState: 1
-    m_Value: 0.286
+    m_Value: 0.322
     min: 0
     max: 1
   response:
@@ -49,12 +49,12 @@ MonoBehaviour:
     m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: -8
+    m_Value: -28
     min: -100
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.7411765, g: 0.8280399, b: 0.85882354, a: 1}
+    m_Value: {r: 0.59131366, g: 0.7664887, b: 0.8301887, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
     max: 180
   saturation:
     m_OverrideState: 1
-    m_Value: -62
+    m_Value: -64
     min: -100
     max: 100
 --- !u!114 &-54837017030918091
@@ -106,27 +106,27 @@ MonoBehaviour:
     m_Value: 6
     min: 0.1
   aperture:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 5.6
     min: 1
     max: 32
   focalLength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 50
     min: 1
     max: 300
   bladeCount:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 5
     min: 3
     max: 9
   bladeCurvature:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
     max: 1
   bladeRotation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
     min: -180
     max: 180
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.58
+    m_Value: 0.54
     min: -1
     max: 1
   xMultiplier:
@@ -203,11 +203,11 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.56
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.85
     min: 0
   scatter:
     m_OverrideState: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.28
     min: 0
     max: 1
 --- !u!114 &8186114944362602949
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   color:
     m_OverrideState: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.206
     min: 0
     max: 1
   smoothness:

@@ -4,6 +4,7 @@ using UnityEngine;
 public class SetActiveDrone : MonoBehaviour
 {
     [SerializeField] GameObject selectionPanel;
+    [SerializeField] GameObject progressPanel;
     public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     
@@ -32,6 +33,10 @@ public class SetActiveDrone : MonoBehaviour
                 
         inSelectionMode = value;
         selectionPanel.SetActive(value);
+        if (!value)
+        {
+            progressPanel.SetActive(value);
+        }
         if (value) DisplayDockedDrones();
 
         if (value)

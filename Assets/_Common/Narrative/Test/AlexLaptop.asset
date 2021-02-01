@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1248e3479a98a3e488522bedf0332b94, type: 3}
   m_Name: AlexLaptop
   m_EditorClassIdentifier: 
-  index: 0
+  index: 1
   sprite: {fileID: 0}
   title: 
   description: Alex's laptop shows a running log of complaints about Sam "losing

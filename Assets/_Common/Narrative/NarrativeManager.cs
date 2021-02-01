@@ -39,6 +39,7 @@ public class NarrativeManager : MonoBehaviour
     public void FindSegment(NarrativeSegment segment)
     {
         ProgressSegments[segment.index].found = true;
+        CheckFoundStatus();
     }
     
     public void SetPanelActive(bool value)

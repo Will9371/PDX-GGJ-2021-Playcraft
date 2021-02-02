@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1248e3479a98a3e488522bedf0332b94, type: 3}
-  m_Name: SamJournal
+  m_Name: AlexNote
   m_EditorClassIdentifier: 
   index: 0
-  sprite: {fileID: 0}
-  title: Sam's Journal.
-  description: Sam's journal. It's mostly upbeat, until it mentions Alex. There are
-    concerns about Alex's reclusivenes and obsession with rescue. Looks like Sam
-    gave up on that long ago.
+  sprite: {fileID: 21300000, guid: 31df80f1f39afa8449b57e1bd4e9d2fa, type: 3}
+  vo: {fileID: 8300000, guid: d561e3aef83fcb1408efe3de9e1d0b9f, type: 3}
+  title: A note from Alex
+  description: '"Consolidated Evidence Same is a (Male) Witch: 1. Looks like one
+    2. Hex-like focus 3. No rxn to running out of bread... Not sure how alive on
+    no snacks"'

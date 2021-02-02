@@ -10,11 +10,15 @@ public class NarrativeManager : MonoBehaviour
     [SerializeField] GameObject ProgressPanel;
     public TypewriterText TypewriterText;
     public string DialogMessage;
+    public Sprite DialogSprite;
+    public AudioClip DialogVO;
     [SerializeField] UnityEvent OnAllFound;
 
     public void Show(NarrativeSegment segment)
     {
         DialogMessage = segment.description;
+        DialogSprite = segment.sprite;
+        DialogVO = segment.vo;
         DialogPanel.SetActive(true);
     }
 

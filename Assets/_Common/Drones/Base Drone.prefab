@@ -2221,7 +2221,7 @@ MonoBehaviour:
   mass: 1
   thrust: 1
   drag: 1
-  interactionDistance: 2.5
+  interactionDistance: 4
   maxBatteryCharge: 40
   shutoffEngineWhenBelow: 0.01
   reactivateEngineWhenAbove: 0.25
@@ -2589,10 +2589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: 0
-  range: 2.5
+  range: 4
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   triggerInteraction: 0
   Output:
     m_PersistentCalls:

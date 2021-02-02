@@ -20,7 +20,7 @@ namespace Playcraft
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else
-            if (StandalonePlatforms.Contains(Application.platform)
+            if (StandalonePlatforms.Contains(Application.platform))
             {
                 Application.Quit();
             }

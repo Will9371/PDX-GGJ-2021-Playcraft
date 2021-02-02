@@ -748,7 +748,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 200000000501000031010000
+  - keys: 20000000050100003101000032010000
     pressType: 2
     OnActive:
       m_PersistentCalls:
@@ -872,7 +872,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 200000000501000031010000
+  - keys: 20000000050100003101000032010000
     pressType: 0
     OnActive:
       m_PersistentCalls:
@@ -888,7 +888,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keys: 200000000501000031010000
+  - keys: 20000000050100003101000032010000
     pressType: 1
     OnActive:
       m_PersistentCalls:
@@ -1762,26 +1762,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Up/W: Thrust
+  m_Text: 'Esc/Tab: Menu
+
+
+    Up/W: Thrust
 
     Down/S: Reverse
 
-    CTRL/Space: Brake
+    CTRL/Space:
+    Brake
 
-    Left Click:
-    Interact
+
+    Left Click: Interact
 
     Right Click: Drone Ability
 
-    Tab: Select Drone
 
-    Home: Restart
-
-    Esc:
-    Quit
-
-
-    Enter: Toggle Instructions'
+    Enter:
+    Toggle Instructions'
 --- !u!1 &1114465466143038326
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1248e3479a98a3e488522bedf0332b94, type: 3}
-  m_Name: FinalDiscovery
+  m_Name: SpaceSuit
   m_EditorClassIdentifier: 
   index: 2
   sprite: {fileID: 0}
   title: 
-  description: 'The torn off name patch reads: "Sam Alexander".'
+  description: A discarded space suit. The name tag has been torn off.

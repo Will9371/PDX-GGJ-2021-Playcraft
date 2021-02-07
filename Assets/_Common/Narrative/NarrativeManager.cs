@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Playcraft.Dialog;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
-using Playcraft.Dialog;
 using UnityEngine.Events;
 
 public class NarrativeManager : MonoBehaviour
@@ -14,12 +15,41 @@ public class NarrativeManager : MonoBehaviour
     public AudioClip DialogVO;
     [SerializeField] UnityEvent OnAllFound;
 
+    public Action<int> OnSegmentFound;
+    public Action OnAirlockReached;
+
+    [HideInInspector] public int Progress;
+    [HideInInspector] public bool HasReachedAirlock;
+
+    List<NarrativeSegment> SegmentsSeen = new List<NarrativeSegment>();
+
     public void Show(NarrativeSegment segment)
     {
         DialogMessage = segment.description;
         DialogSprite = segment.sprite;
         DialogVO = segment.vo;
+        if (!SegmentsSeen.Contains(segment))
+        {
+            SegmentsSeen.Add(segment);
+            Progress = SegmentsSeen.Count;
+            OnSegmentFound?.Invoke(Progress);
+        }
         DialogPanel.SetActive(true);
+    }
+
+    public void ReachAirlock()
+    {
+        HasReachedAirlock = true;
+        OnAirlockReached?.Invoke();
+    }
+
+    public void RefreshQuestProgress()
+    {
+        OnSegmentFound?.Invoke(Progress);
+        if (HasReachedAirlock)
+        {
+            OnAirlockReached?.Invoke();
+        }
     }
 
     public void TryDismiss()

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SetActiveDrone : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class SetActiveDrone : MonoBehaviour
     [SerializeField] GameObject progressPanel;
     public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
-    
+    public UnityEvent OnDroneChanged;
+
     //DroneState currentDroneState => droneData[index].drone.state;
     //bool canChange => currentDroneState.docked || currentDroneState.dead;
     
@@ -56,7 +58,10 @@ public class SetActiveDrone : MonoBehaviour
     public void SetActiveDroneByIndex()
     {
         for (int i = 0; i < droneData.Length; i++)
+        {
             droneData[i].drone.SetActive(i == index);
+        }
+        OnDroneChanged.Invoke();
     }
     
     void DeactivateAll()

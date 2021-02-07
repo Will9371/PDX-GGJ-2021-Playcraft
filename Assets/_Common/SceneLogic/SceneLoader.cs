@@ -73,11 +73,15 @@ public class SceneLoader : MonoBehaviour
             if (i < DroneActivator.droneData.Length)
             {
                 DroneActivator.droneData[i].drone = newDrone.GetComponentInChildren<SetDroneActive>();
+                var questLogManager = newDrone.GetComponentInChildren<QuestLogManager>();
+                NarrativeManager.OnSegmentFound += questLogManager.UpdateQuestProgress;
+                NarrativeManager.OnAirlockReached += questLogManager.SetAirlockQuestComplete;
             }
         }
         DroneActivator.SetActiveDroneByIndex();
 
         setupInfo.GetComponentInChildren<NarrativeRelay>().NarrativeManager = NarrativeManager;
+        
         DroneActivator.ToggleSelectionMode();
     }
 }

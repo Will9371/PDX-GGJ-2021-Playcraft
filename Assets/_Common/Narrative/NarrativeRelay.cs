@@ -17,6 +17,11 @@ public class NarrativeRelay : MonoBehaviour
         NarrativeManager.RefreshDisplay();
     }
 
+    public void ReachAirlock()
+    {
+        NarrativeManager.ReachAirlock();
+    }
+
     public void FindSegment(NarrativeSegment segment)
     {
         NarrativeManager.FindSegment(segment);

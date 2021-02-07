@@ -413,6 +413,30 @@ PrefabInstance:
       propertyPath: beaconLauncher
       value: 
       objectReference: {fileID: 259579251}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 259579251}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: OnSetActive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_Range
@@ -496,6 +520,11 @@ PrefabInstance:
     - target: {fileID: 5620288941243796099, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845986454977234182, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

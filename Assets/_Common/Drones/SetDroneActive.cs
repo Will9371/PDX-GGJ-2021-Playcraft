@@ -1,6 +1,5 @@
 ﻿using Playcraft;
 using UnityEngine;
-//using UnityEngine.Events;
 
 public class SetDroneActive : MonoBehaviour
 {
@@ -11,13 +10,11 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] GameObject lights;
     [SerializeField] DrainChargeBattery battery;
     [SerializeField] KeyboardInput interactionInput;
-    [SerializeField] KeyboardInput beaconLauncher;
-    [SerializeField] KeyboardInput tractorBeam;
-    [SerializeField] AudioSource tractorBeamAudio;
-    [SerializeField] KeyboardInput emp;
     [SerializeField] FollowDrone follow;
     [SerializeField] GameObject lowBatterySound;
     [SerializeField] GameObject rechargeSound;
+    [SerializeField] AudioSource followSound;
+    [SerializeField] BoolEvent OnSetActive;
 
     Camera cam;
     AudioListener sound;
@@ -44,29 +41,13 @@ public class SetDroneActive : MonoBehaviour
         lowBatterySound.SetActive(value);
         rechargeSound.SetActive(value);
         
-        if (beaconLauncher)
-        {
-            beaconLauncher.enabled = value;
-        }
-        if (tractorBeam)
-        {
-            tractorBeam.enabled = value;
-            if (!value) tractorBeamAudio.Stop();
-        }
-        if (emp)
-        {
-            emp.enabled = value;
-        }
-
-        if (value)
+        if (!value)
         {
             follow.enabled = false;
+            followSound.Stop();
         }
-        //Debug.Log((deactivationAction != null) + ", " + value);
-        //if (deactivationAction && !value)
-        //{
-        //    Debug.Log("Triggering deactivation action");
-        //    deactivationAction.Interact(false);
-        //}
+        
+        // For drone-specific activations
+        OnSetActive.Invoke(value);
     }
 }

@@ -33,10 +33,10 @@ public class SetActiveDrone : MonoBehaviour
                 
         inSelectionMode = value;
         selectionPanel.SetActive(value);
-        if (!value)
-        {
-            progressPanel.SetActive(value);
-        }
+        //if (!value)
+        //{
+        //    progressPanel.SetActive(value);
+        //}
         if (value) DisplayDockedDrones();
 
         if (value)

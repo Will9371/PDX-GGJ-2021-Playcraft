@@ -3,6 +3,8 @@ using UnityEngine.Events;
 
 public class RangedRepeatingTimedEvent : MonoBehaviour
 {
+    [Tooltip("Time between output events, varies with each iteration.  " +
+             "Set the same values for X and Y to use a constant delay")]
     [SerializeField] Vector2 range;
     [SerializeField] UnityEvent Output;
     

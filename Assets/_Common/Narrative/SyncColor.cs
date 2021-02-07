@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+// Edit the color on multiple UI elements at once
 public class SyncColor : MonoBehaviour
 {
     [SerializeField] Color color;

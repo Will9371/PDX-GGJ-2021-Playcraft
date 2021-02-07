@@ -14,7 +14,10 @@ public class DroneSettings : MonoBehaviour
     [SerializeField] float maxBatteryCharge;
     [SerializeField] [Range(0f, 1f)] float shutoffEngineWhenBelow;
     [SerializeField] [Range(0f, 1f)] float reactivateEngineWhenAbove;
+    [Tooltip("Set to 0 to disable point light")]
     [SerializeField] float pointLightIntensity;
+    [SerializeField] float pointLightRange;
+    [Tooltip("Set to 0 to disable spot light")]
     [SerializeField] float spotLightIntensity;
     
     [Header("Settings")]
@@ -50,16 +53,11 @@ public class DroneSettings : MonoBehaviour
         mouseMovement.enabled = !useClickDrag;
         mouseInput.enabled = useClickDrag;
         
-        if (pointLight != null)
-        {
-            pointLight.intensity = pointLightIntensity;
-            pointLight.enabled = pointLightIntensity > 0f;
-        }
+        pointLight.intensity = pointLightIntensity;
+        pointLight.range = pointLightRange;
+        pointLight.enabled = pointLightIntensity > 0f;
 
-        if (spotLight != null)
-        {
-            spotLight.intensity = spotLightIntensity;
-            spotLight.enabled = spotLightIntensity > 0f;
-        }
+        spotLight.intensity = spotLightIntensity;
+        spotLight.enabled = spotLightIntensity > 0f;
     }
 }

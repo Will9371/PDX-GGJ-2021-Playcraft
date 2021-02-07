@@ -5061,11 +5061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 789730941, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 789730941, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: m_Intensity
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177100698, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: m_IsActive
@@ -5086,14 +5086,26 @@ PrefabInstance:
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: spotLight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1683771075385672107}
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: pointLight
       value: 
+      objectReference: {fileID: 404219045651566676}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: pointLightRange
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: maxBatteryCharge
-      value: 40
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: spotLightIntensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: pointLightIntensity
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: emp
@@ -5102,7 +5114,7 @@ PrefabInstance:
     - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -5112,7 +5124,7 @@ PrefabInstance:
     - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_Intensity
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1998995640678888533, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -5202,7 +5214,7 @@ PrefabInstance:
     - target: {fileID: 5519816051569523605, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: range.y
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8902899091064205985, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
@@ -5240,6 +5252,18 @@ GameObject:
 --- !u!4 &373019404521736529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1328790533140258439, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+    type: 3}
+  m_PrefabInstance: {fileID: 1683771074596214742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &404219045651566676 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+    type: 3}
+  m_PrefabInstance: {fileID: 1683771074596214742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &1683771075385672107 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 789730941, guid: 7615dca9ed9b3fa47ae84c6da792b735,
     type: 3}
   m_PrefabInstance: {fileID: 1683771074596214742}
   m_PrefabAsset: {fileID: 0}

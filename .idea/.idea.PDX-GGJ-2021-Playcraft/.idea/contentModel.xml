@@ -52,7 +52,10 @@
         </e>
         <e p="Playcraft" t="Include">
           <e p="_NEW" t="Include">
-            <e p="AudioController.cs" t="Include" />
+            <e p="Audio" t="Include">
+              <e p="AudioController.cs" t="Include" />
+              <e p="PlaySoundOnCollision.cs" t="Include" />
+            </e>
             <e p="DisplayPercentText.cs" t="Include" />
             <e p="DowncastSO.cs" t="Include" />
             <e p="FloatSO.cs" t="Include" />

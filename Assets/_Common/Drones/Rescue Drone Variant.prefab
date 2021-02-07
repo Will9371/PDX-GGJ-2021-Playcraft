@@ -152,12 +152,20 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: pointLightRange
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: maxBatteryCharge
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: interactionDistance
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072682960, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: pointLightIntensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: tractorBeam
@@ -168,9 +176,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8713270578200704119}
     - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
+      propertyPath: tractorBeamAudio
+      value: 
+      objectReference: {fileID: 6457468278897156328}
+    - target: {fileID: 2072682961, guid: 7615dca9ed9b3fa47ae84c6da792b735, type: 3}
       propertyPath: deactivationAction
       value: 
       objectReference: {fileID: 3430868885951609274}
+    - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_Range
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351616224464783234, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2133419787339867849, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: canAlwaysActivate
@@ -386,6 +408,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99f588bc548c7f48aab95442ca9c7d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &6457468278897156328 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5845986454977234182, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+    type: 3}
+  m_PrefabInstance: {fileID: 629541440739698158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &629541440828125355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 90166597, guid: 7615dca9ed9b3fa47ae84c6da792b735,

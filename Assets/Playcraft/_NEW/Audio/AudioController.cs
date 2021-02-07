@@ -1,7 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// RENAME: for specificity
 public class AudioController : MonoBehaviour
 {
     [Range(0f, 1f)]

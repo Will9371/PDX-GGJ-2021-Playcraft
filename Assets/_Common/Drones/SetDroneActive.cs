@@ -13,6 +13,7 @@ public class SetDroneActive : MonoBehaviour
     [SerializeField] KeyboardInput interactionInput;
     [SerializeField] KeyboardInput beaconLauncher;
     [SerializeField] KeyboardInput tractorBeam;
+    [SerializeField] AudioSource tractorBeamAudio;
     [SerializeField] KeyboardInput emp;
     [SerializeField] FollowDrone follow;
     [SerializeField] GameObject lowBatterySound;
@@ -50,6 +51,7 @@ public class SetDroneActive : MonoBehaviour
         if (tractorBeam)
         {
             tractorBeam.enabled = value;
+            if (!value) tractorBeamAudio.Stop();
         }
         if (emp)
         {

@@ -11,7 +11,6 @@
           <e p="Audio" t="Include">
             <e p="LoopWithPause.cs" t="Include" />
             <e p="RandomizeClip.cs" t="Include" />
-            <e p="RandomizePitch.cs" t="Include" />
           </e>
           <e p="Doors" t="Include">
             <e p="LockableDoor.cs" t="Include" />

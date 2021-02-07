@@ -37,7 +37,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Type Based/Transform/FreeMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Physics/ZeroGravityMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/UI/DynamicBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" />
@@ -87,6 +86,8 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/PlaySoundOnCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/SyncColor.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Audio/RandomizePitch.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Audio/RandomizeClip.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -133,7 +134,7 @@
       <workItem from="1611958587241" duration="23938000" />
       <workItem from="1612040835591" duration="17344000" />
       <workItem from="1612129514648" duration="8436000" />
-      <workItem from="1612659830361" duration="5846000" />
+      <workItem from="1612659830361" duration="6782000" />
     </task>
     <servers />
   </component>

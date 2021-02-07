@@ -21,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/ToggleOverTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Common/Drones/DrainChargeBattery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/SyncColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/DisplayPercentText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Playcraft/_NEW/DowncastSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Common/Narrative/DisplayItemUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -85,6 +86,7 @@
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/AudioController.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/PlaySoundOnCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetDroneActive.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/SyncColor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -131,7 +133,7 @@
       <workItem from="1611958587241" duration="23938000" />
       <workItem from="1612040835591" duration="17344000" />
       <workItem from="1612129514648" duration="8436000" />
-      <workItem from="1612659830361" duration="4889000" />
+      <workItem from="1612659830361" duration="5846000" />
     </task>
     <servers />
   </component>

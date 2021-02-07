@@ -15,10 +15,14 @@ public class NarrativeManager : MonoBehaviour
     public AudioClip DialogVO;
     [SerializeField] UnityEvent OnAllFound;
 
-    public Action<int> OnSegmentFound;
+    public Action<int, int> OnSegmentFound;
     public Action OnAirlockReached;
 
-    [HideInInspector] public int Progress;
+    public int InvestigationGoal;
+    public NarrativeSegment ReadyToSolve;
+    bool HasShownReadyToSolveMessage;
+
+    [HideInInspector] public int InvestigationProgress;
     [HideInInspector] public bool HasReachedAirlock;
 
     List<NarrativeSegment> SegmentsSeen = new List<NarrativeSegment>();
@@ -31,21 +35,33 @@ public class NarrativeManager : MonoBehaviour
         if (!SegmentsSeen.Contains(segment))
         {
             SegmentsSeen.Add(segment);
-            Progress = SegmentsSeen.Count;
-            OnSegmentFound?.Invoke(Progress);
+            InvestigationProgress = SegmentsSeen.Count;
+            OnSegmentFound?.Invoke(InvestigationProgress, InvestigationGoal);
         }
         DialogPanel.SetActive(true);
+    }
+
+    public bool QuestsComplete()
+    {
+        return InvestigationProgress >= InvestigationGoal && HasReachedAirlock;
     }
 
     public void ReachAirlock()
     {
         HasReachedAirlock = true;
+
+        if (QuestsComplete() && !HasShownReadyToSolveMessage)
+        {
+            HasShownReadyToSolveMessage = true;
+            Show(ReadyToSolve);
+        }
+
         OnAirlockReached?.Invoke();
     }
 
     public void RefreshQuestProgress()
     {
-        OnSegmentFound?.Invoke(Progress);
+        OnSegmentFound?.Invoke(InvestigationProgress, InvestigationGoal);
         if (HasReachedAirlock)
         {
             OnAirlockReached?.Invoke();
@@ -57,17 +73,16 @@ public class NarrativeManager : MonoBehaviour
         if (TypewriterText.IsDone())
         {
             DialogPanel.SetActive(false);
+            if (QuestsComplete() && !HasShownReadyToSolveMessage)
+            {
+                HasShownReadyToSolveMessage = true;
+                Show(ReadyToSolve);
+            }
         }
         else
         {
             TypewriterText.Skip();
         }
-    }
-    
-    void Start()
-    {
-        foreach (var segment in ProgressSegments)
-            segment.uiObject.Initialize(segment.segment);
     }
     
     public void FindSegment(NarrativeSegment segment)

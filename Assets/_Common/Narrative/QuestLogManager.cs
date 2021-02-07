@@ -7,13 +7,12 @@ public class QuestLogManager : MonoBehaviour
 {
     public Toggle ExplorationQuestToggle;
     public Text ExplorationQuestText;
-    public int ExplorationQuestGoal;
     public Toggle AirlockQuestToggle;
 
-    public void UpdateQuestProgress(int progress)
+    public void UpdateQuestProgress(int progress, int goal)
     {
-        ExplorationQuestText.text = string.Format("Investigate station\n({0} / {1})", Mathf.Min(progress, ExplorationQuestGoal), ExplorationQuestGoal);
-        ExplorationQuestToggle.isOn = progress >= ExplorationQuestGoal;
+        ExplorationQuestText.text = string.Format("Investigate station\n({0} / {1})", Mathf.Min(progress, goal), goal);
+        ExplorationQuestToggle.isOn = progress >= goal;
     }
 
     public void SetAirlockQuestComplete()

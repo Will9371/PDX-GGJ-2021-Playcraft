@@ -4,8 +4,9 @@ using UnityEngine.Events;
 
 public class SetActiveDrone : MonoBehaviour
 {
+    [SerializeField] NarrativeManager narrativeManager;
     [SerializeField] GameObject selectionPanel;
-    [SerializeField] GameObject progressPanel;
+    [SerializeField] GameObject submitReportButton;
     public DroneActivation[] droneData;
     [SerializeField] int startingIndex;
     public UnityEvent OnDroneChanged;
@@ -39,7 +40,11 @@ public class SetActiveDrone : MonoBehaviour
         //{
         //    progressPanel.SetActive(value);
         //}
-        if (value) DisplayDockedDrones();
+        if (value)
+        {
+            DisplayDockedDrones();
+            submitReportButton.SetActive(narrativeManager.InvestigationProgress >= narrativeManager.InvestigationGoal && narrativeManager.HasReachedAirlock);
+        }
 
         if (value)
         {

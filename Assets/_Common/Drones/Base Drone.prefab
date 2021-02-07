@@ -4704,7 +4704,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplorationQuestToggle: {fileID: 7937604946177373829}
   ExplorationQuestText: {fileID: 3200124599105822869}
-  ExplorationQuestGoal: 2
   AirlockQuestToggle: {fileID: 993641888256494845}
 --- !u!1 &8994955151532540579
 GameObject:

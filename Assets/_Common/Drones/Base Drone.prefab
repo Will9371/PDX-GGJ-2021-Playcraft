@@ -2500,13 +2500,13 @@ MonoBehaviour:
   lights: {fileID: 1177100698}
   battery: {fileID: 3568361738965447796}
   interactionInput: {fileID: 8352003009847186178}
-  beaconLauncher: {fileID: 0}
-  tractorBeam: {fileID: 0}
-  tractorBeamAudio: {fileID: 0}
-  emp: {fileID: 0}
   follow: {fileID: 6246717271875747312}
   lowBatterySound: {fileID: 1182462594}
   rechargeSound: {fileID: 8441850536754141037}
+  followSound: {fileID: 5845986454977234182}
+  OnSetActive:
+    m_PersistentCalls:
+      m_Calls: []
   state: {fileID: 2133419787339867849}
 --- !u!114 &2133419787339867849
 MonoBehaviour:

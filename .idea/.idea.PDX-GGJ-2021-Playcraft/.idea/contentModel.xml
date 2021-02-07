@@ -11,7 +11,6 @@
           <e p="Audio" t="Include">
             <e p="LoopWithPause.cs" t="Include" />
             <e p="RandomizeClip.cs" t="Include" />
-            <e p="RandomizePitch.cs" t="Include" />
           </e>
           <e p="Doors" t="Include">
             <e p="LockableDoor.cs" t="Include" />
@@ -36,6 +35,7 @@
             <e p="NarrativeManager.cs" t="Include" />
             <e p="NarrativeRelay.cs" t="Include" />
             <e p="NarrativeSegment.cs" t="Include" />
+            <e p="SyncColor.cs" t="Include" />
           </e>
           <e p="SceneLogic" t="Include">
             <e p="GameStartSettings.cs" t="Include" />

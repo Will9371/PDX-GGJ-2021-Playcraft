@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// OBSOLETE: use RangedRepeatingTimedEvent
 public class LoopWithPause : MonoBehaviour
 {
     public float PauseBetweenLoops = 1f;

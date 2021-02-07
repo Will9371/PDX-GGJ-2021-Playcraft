@@ -1,15 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomizeClip : MonoBehaviour
 {
-    public List<AudioClip> Clips;
+    [SerializeField] AudioSource source;
+    [SerializeField] List<AudioClip> clips;
+    
+    void Awake() { if (!source) source = GetComponent<AudioSource>(); }
 
-    void Start()
+    public void Randomize(bool playOnSelect)
     {
-        var source = GetComponentInChildren<AudioSource>();
-        source.clip = Clips[Random.Range(0, Clips.Count)];
-        source.Play();
+        var index = Random.Range(0, clips.Count);
+        source.clip = clips[index];
+        
+        if (playOnSelect)
+            source.Play();
     }
 }

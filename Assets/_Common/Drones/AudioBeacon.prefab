@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7896973047716651627}
+  - component: {fileID: 8478201056906365098}
+  - component: {fileID: 9112233384487932465}
   - component: {fileID: 7896973047716651626}
   m_Layer: 0
   m_Name: SFX
@@ -31,6 +33,48 @@ Transform:
   m_Father: {fileID: 7896973048211110316}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8478201056906365098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896973047716651636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22144534711123140b186406bc05f9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 7896973047716651626}
+  clips:
+  - {fileID: 8300000, guid: a48ddcf94bcc4dc47ac1120073b2dd48, type: 3}
+--- !u!114 &9112233384487932465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896973047716651636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f62fc1b76dac4c40bf5d509fefed6af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: {x: 0.75, y: 1.25}
+  Output:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7896973047716651626}
+        m_MethodName: set_pitch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &7896973047716651626
 AudioSource:
   m_ObjectHideFlags: 0
@@ -166,9 +210,8 @@ GameObject:
   - component: {fileID: 6351550576267393516}
   - component: {fileID: 3296582364095872844}
   - component: {fileID: 6281683746954280397}
-  - component: {fileID: -151288475855106837}
-  - component: {fileID: -5010806729690168091}
-  - component: {fileID: 4582305323626043211}
+  - component: {fileID: 5755242938663322668}
+  - component: {fileID: 828058096638966449}
   m_Layer: 0
   m_Name: AudioBeacon
   m_TagString: Untagged
@@ -234,35 +277,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-151288475855106837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7896973048211110317}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e003a76898ea04cabf411e74e2a2d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Min: 0.9
-  Max: 1
---- !u!114 &-5010806729690168091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7896973048211110317}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22144534711123140b186406bc05f9ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 8300000, guid: a48ddcf94bcc4dc47ac1120073b2dd48, type: 3}
---- !u!114 &4582305323626043211
+--- !u!114 &5755242938663322668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,10 +286,72 @@ MonoBehaviour:
   m_GameObject: {fileID: 7896973048211110317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a504be6ce58fc54db79154eabfd31be, type: 3}
+  m_Script: {fileID: 11500000, guid: 52cb2a75e55924b4daa955b8ae5f7747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseBetweenLoops: 3
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 828058096638966449}
+        m_MethodName: Begin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9112233384487932465}
+        m_MethodName: Input
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &828058096638966449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896973048211110317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecd4739386153342a9831f3dee9884d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: {x: 3, y: 3}
+  Output:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8478201056906365098}
+        m_MethodName: Randomize
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7896973047716651626}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7896973048245626063
 GameObject:
   m_ObjectHideFlags: 0

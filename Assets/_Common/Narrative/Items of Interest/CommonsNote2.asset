@@ -16,4 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: This is a test note
+  description: Ration logs. Looks like the crew were running low on supplies for
+    a while.

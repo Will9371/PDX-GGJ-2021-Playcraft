@@ -16,5 +16,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: An assortment of notes are stuck to the wall. A handwritten code of
-    conduct.
+  description: A handwritten code of conduct.

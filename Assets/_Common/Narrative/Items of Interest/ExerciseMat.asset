@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: An exercise mat. It looks well used.
+  description: There are dark imprints and wear in the shape of... knuckle marks?
+    Yoga is pretty boring, though.

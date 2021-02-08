@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: A drink cooler bot. Nice.
+  description: It looks like 'science' in here, but not the inspiring kind. There's
+    a lot of green furry bits overflowing some test tubes spotted with gren and brown,
+    labeled with either initials S._. or A._. ... I'm glad I can't smell these.

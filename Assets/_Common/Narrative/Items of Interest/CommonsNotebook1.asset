@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: Exercise logs and sign-up sheets. Toward the end, only Alex looks
-    like they were using the equipment much.
+  description: Tables with scores and heckling comments, "AstrAbomination" versus
+    "Sam." Sam was killer at 'Blind Punch Ball'

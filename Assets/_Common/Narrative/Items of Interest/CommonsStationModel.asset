@@ -16,5 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: A 3D model of the station. Looks like we're in the in the wing on
-    the left side of the model.
+  description: The crew rooms are marked in blue and the air lock is in red. If I
+    collect enough notes on the way there maybe this won't be like space CSI...

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: What even is this?
+  description: They put DOOM on it...

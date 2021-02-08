@@ -16,5 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: This access terminal seals off the area in case of emergency. Access
-    Bot should be able to override the controls.
+  description: An access terminal for emergencies only. Access Bot should be able
+    to override these controls.

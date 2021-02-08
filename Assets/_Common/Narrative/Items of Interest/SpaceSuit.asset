@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 2
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: A discarded space suit. The name tag has been torn off.
+  description: Their suits are... still here. They appear to have never left.

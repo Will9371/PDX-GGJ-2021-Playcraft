@@ -3179,7 +3179,7 @@ MonoBehaviour:
   OnAllFound:
     m_PersistentCalls:
       m_Calls: []
-  InvestigationGoal: 2
+  InvestigationGoal: 18
   ReadyToSolve: {fileID: 11400000, guid: a817edfe2544cbb4eb82aab9a0434e50, type: 2}
   InvestigationProgress: 0
   HasReachedAirlock: 0

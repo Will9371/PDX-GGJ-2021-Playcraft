@@ -13,13 +13,9 @@ MonoBehaviour:
   m_Name: SamNote
   m_EditorClassIdentifier: 
   index: 0
-  sprite: {fileID: 21300000, guid: 520ae084210348d4181d5311b389516e, type: 3}
-  vo: {fileID: 8300000, guid: f43ec7defd20d9b46bb786d3acb87ffb, type: 3}
+  sprite: {fileID: 21300000, guid: 8f8618274a03d544da90d8ee3a348842, type: 3}
+  vo: {fileID: 0}
   title: A note from Sam
-  description: '"It was always himself that the coward abandoned first. After that,
-    the rest comes easily... (Most) Notable when alone. First time for everything.
-    Not sure of the significance of ''first time'' when no other experiences of novelty
-    will follow. Bypassing continuous thoughts. Estimating 500-800 KCal/10 mo. onward,
-    TBD by macronutrient comp - doubtful margin of error. Considering finishing drafts
-    of QRT lessons, the emotive value of contribution - while false - remains immensely
-    gratifying. Onward... !"'
+  description: '"documented correlations to perceived phenomena: low blood sugar
+    (>300 kJ 4x/day goal) / silence (4-10 conversations per day, 5m ea.) / cortisol
+    elevation (sleep...)" '

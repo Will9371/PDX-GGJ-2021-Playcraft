@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CommonsNote
   m_EditorClassIdentifier: 
   index: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5173ba69cedede045ae8b5faa612cc91, type: 3}
   vo: {fileID: 0}
   title: 
   description: A handwritten code of conduct.

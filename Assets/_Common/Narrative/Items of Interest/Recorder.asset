@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: Voice recordings of someone's poetry. Sad, lonely stuff.
+  description: '[transcript - Astronaut S. ] "All... right. Got the [django?] in
+    the [hoomlah?] started, should detect any air pressure changes in this room...
+    don''t know what A. is so concerned about. Our circumstances are enough to cause
+    some delusions. It''s just a matter of mental fortitude... hoping this will boost
+    morale."'

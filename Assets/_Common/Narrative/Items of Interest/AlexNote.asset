@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: AlexNote
   m_EditorClassIdentifier: 
   index: 0
-  sprite: {fileID: 21300000, guid: 31df80f1f39afa8449b57e1bd4e9d2fa, type: 3}
-  vo: {fileID: 8300000, guid: d561e3aef83fcb1408efe3de9e1d0b9f, type: 3}
+  sprite: {fileID: 21300000, guid: e2a208a2304da7645bbcbf6666694013, type: 3}
+  vo: {fileID: 0}
   title: A note from Alex
-  description: '"Consolidated Evidence Sam is a (Male) Witch: 1. Looks like one 2.
-    Hex-like focus 3. No rxn to running out of bread... Not sure how alive on no
-    snacks"'
+  description: '"heaping fear, disappear, if it comes, beat the drums, if it stays,
+    warm embrace ...'' Don''t need to send a poet."'

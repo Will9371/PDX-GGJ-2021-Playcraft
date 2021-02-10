@@ -16,4 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: Their suits are... still here. They appear to have never left.
+  description: This suit shows no signs of damage... or use. No one in this room,
+    either.

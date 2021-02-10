@@ -16,5 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: The crew rooms are marked in blue and the air lock is in red. If I
-    collect enough notes on the way there maybe this won't be like space CSI...
+  description: 'The crew rooms are marked in blue and the air lock is in red. I may
+    want to remember that. '

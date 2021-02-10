@@ -16,4 +16,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: Crew list is mostly MIA. There are two names remaining.
+  description: Crew list is mostly MIA, though it's suggested this wing once had
+    5 members aboard. There are two names remaining - S. [REDACTED] and A. [REDACTED].
+    Last presence noted in the airlock.

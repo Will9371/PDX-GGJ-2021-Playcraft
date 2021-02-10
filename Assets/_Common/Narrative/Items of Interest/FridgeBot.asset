@@ -16,6 +16,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: It looks like 'science' in here, but not the inspiring kind. There's
-    a lot of green furry bits overflowing some test tubes spotted with gren and brown,
-    labeled with either initials S._. or A._. ... I'm glad I can't smell these.
+  description: It looks like 'science' in here, but not the inspiring kind - there's
+    a lot of green furry bits overflowing some test tubes spotted with green and
+    brown, labeled with initials S. or A. - I'm glad I can't smell these.

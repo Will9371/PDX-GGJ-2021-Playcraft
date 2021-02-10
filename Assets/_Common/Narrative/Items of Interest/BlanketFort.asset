@@ -16,6 +16,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: Blanket propped up by storage boxes, it looks like a bedroom inside
-    with Choco-X wrappers, pillows with drawn faces on them and a dream journal.
-    Pretty cozy ...except for the red symbols and clawing stick figures drawings.
+  description: Blanket fort. It looks like a bedroom inside with Choco-X wrappers,
+    pillows with drawn faces, and a dream journal. Pretty cozy except for the red
+    symbols and clawing stick figures drawings.

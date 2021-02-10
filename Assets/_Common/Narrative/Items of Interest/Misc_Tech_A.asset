@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sprite: {fileID: 0}
+  vo: {fileID: 0}
   title: 
-  description: Looks like a sound mixer. Were they recording music?
+  description: '[Alex / A. ] "Recording this. Will listen back. I''m hearing it.
+    I''m hearing it now... am I? Saying it out loud. I will listen to it." [noise/thump/dropping]'

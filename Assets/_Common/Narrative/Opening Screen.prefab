@@ -74,7 +74,13 @@ MonoBehaviour:
   - '>> Access bot found!'
   - '>> ! Failed to connect to Access bot.  Try again when within range.'
   - '>>'
-  - '>> OBJECTIVE: search for clues regarding critical malfunction of ISS_01'
+  - '>> Crew vital signs disrupted near air lock. Recent DNA detected on 18 items.'
+  - '>> OBJECTIVES: Determine cause of crew disappearance: [SHIP DYSFUNCTION] [CREW
+    MUTINY] [INDETERMINATE PRESENCE]'
+  - '>> NOTE: Clean-up crew safety depends on an accurate decision. Log 60% (12)
+    of items tagged with crew DNA before sending report. '
+  - '>> Area near astronaut''s last life signs (air lock) may be hazardous. Investigate
+    end of shuttle to assess risk.'
   - '>> Press Tab to begin'
 --- !u!114 &934572110445141771
 MonoBehaviour:

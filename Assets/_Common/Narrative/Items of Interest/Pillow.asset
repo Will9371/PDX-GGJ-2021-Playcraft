@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Pillow
   m_EditorClassIdentifier: 
   index: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 6e22ca52d6318ad459bfc5d825e7f237, type: 3}
+  vo: {fileID: 0}
   title: 
-  description: Sleep wherever, I guess.
+  description: It's got a big cat face, licking, labeled 'Fluffer' and 'talk to me.'

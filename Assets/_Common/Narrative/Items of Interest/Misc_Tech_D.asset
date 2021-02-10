@@ -16,4 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: 
-  description: They put DOOM on it...
+  description: This looks like it was once used for calculating trajectories... but
+    they put DOOM on it.

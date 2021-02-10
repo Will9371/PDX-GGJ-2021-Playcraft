@@ -16,6 +16,9 @@ MonoBehaviour:
   sprite: {fileID: 0}
   vo: {fileID: 0}
   title: Alex's Journal
-  description: Alex's journal. It's mostly upbeat, until it mentions Sam. There are
-    concerns about Sam's reclusivenes and obsession with rescue. Looks like Alex
-    gave up on that long ago.
+  description: '[transcript - Astronaut A.] "Log ...8,054. Feeling good, like I should!
+    Singing four times a day, one talk to Fluffer, and I made up a warding rhyme
+    at the cargo humidity station. It helps stop... yeah... the brain howling, but
+    doubtful S. will be into it. Trying every... single... day... to get their mind
+    back up. I don''t know what they''re doing alone in there. Who is the selfish
+    one?"'

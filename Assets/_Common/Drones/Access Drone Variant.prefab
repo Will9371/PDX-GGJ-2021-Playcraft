@@ -5240,6 +5240,11 @@ PrefabInstance:
       propertyPath: range.y
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 5768889101249588102, guid: 7615dca9ed9b3fa47ae84c6da792b735,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5845986454977234182, guid: 7615dca9ed9b3fa47ae84c6da792b735,
         type: 3}
       propertyPath: m_Enabled

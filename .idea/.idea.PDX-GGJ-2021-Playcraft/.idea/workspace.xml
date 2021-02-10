@@ -37,7 +37,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/LerpColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Debug/PrintToConsole.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/State Machine/RespondToEventID.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/Quality of Life/Unity Extension/CustomTags.cs" />
@@ -77,7 +76,6 @@
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeSegment.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/ActivateItemUI.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/DisplayItemUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/DroneSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/AudioController.cs" />
       <option value="$PROJECT_DIR$/Assets/Playcraft/_NEW/Audio/PlaySoundOnCollision.cs" />
@@ -88,6 +86,8 @@
       <option value="$PROJECT_DIR$/Assets/_Common/Audio/RandomizeClip.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Narrative/SyncColor.cs" />
       <option value="$PROJECT_DIR$/Assets/_Common/Drones/SetActiveDrone.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/SyncText.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Common/Narrative/NarrativeManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ngbK3IUTJNOsGdKdzwlJkNJY6b" />
@@ -135,6 +135,7 @@
       <workItem from="1612040835591" duration="17344000" />
       <workItem from="1612129514648" duration="8436000" />
       <workItem from="1612659830361" duration="8075000" />
+      <workItem from="1612915835958" duration="1379000" />
     </task>
     <servers />
   </component>

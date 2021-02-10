@@ -35,7 +35,9 @@
             <e p="NarrativeManager.cs" t="Include" />
             <e p="NarrativeRelay.cs" t="Include" />
             <e p="NarrativeSegment.cs" t="Include" />
+            <e p="QuestLogManager.cs" t="Include" />
             <e p="SyncColor.cs" t="Include" />
+            <e p="SyncText.cs" t="Include" />
           </e>
           <e p="SceneLogic" t="Include">
             <e p="GameStartSettings.cs" t="Include" />
